@@ -1,0 +1,147 @@
+{
+  "meta": {
+    "id": "thailand",
+    "accentColor": "#0284c7",
+    "heroIcon": "ti-beach",
+    "title": "Thailand",
+    "destination": "Phuket · Bangkok · Pattaya",
+    "subtitle": "Phuket → Bangkok → Pattaya",
+    "tagline": "6 days · couple · leisure",
+    "tripType": "Leisure",
+    "durationDays": 6,
+    "startDate": "2025-03-26",
+    "endDate": "2025-03-31",
+    "dateLabel": "26–31 Mar 2025",
+    "travelers": 2,
+    "travelerLabel": "couple",
+    "highlights": ["Phi Phi Island", "Grand Palace", "Pattaya Beach"],
+    "budgetSummary": { "currency": "THB", "total": "~36,200", "usdEquiv": "~$1,065", "note": "Excludes international flights, for 2" }
+  },
+  "flights": {
+    "outbound": {
+      "label": "Outbound",
+      "route": "DAC → BKK",
+      "detail": "Wed 26 Mar · 9:15 AM → 1:05 PM · BS217 · US-Bangla Airlines"
+    },
+    "return": {
+      "label": "Return",
+      "route": "BKK → DAC",
+      "detail": "Mon 31 Mar · 1:55 PM → 3:25 PM · BS218 · US-Bangla Airlines"
+    },
+    "internal": [
+      {
+        "label": "Bangkok → Phuket",
+        "route": "DMK → HKT",
+        "detail": "Wed 26 Mar · 5:15 PM → 6:45 PM · FD3009 · Thai AirAsia"
+      },
+      {
+        "label": "Phuket → Bangkok",
+        "route": "HKT → DMK",
+        "detail": "Sat 29 Mar · 8:50 AM → 10:15 AM · FD8057 · Thai AirAsia"
+      }
+    ]
+  },
+  "hotels": [
+    { "name": "Quip Bed & Breakfast", "location": "Phuket",  "nights": 3, "dateRange": "26–29 Mar" },
+    { "name": "QG Resort",            "location": "Bangkok", "nights": 2, "dateRange": "29–31 Mar" }
+  ],
+  "route": [
+    { "city": "DAC",          "via": null },
+    { "city": "Phuket",       "via": "flight" },
+    { "city": "Phi Phi Island","via": "boat",   "stopType": "daytrip" },
+    { "city": "Bangkok",      "via": "flight" },
+    { "city": "Pattaya",      "via": "bus",    "stopType": "daytrip" },
+    { "city": "DAC",          "via": null }
+  ],
+  "exchangeRates": {
+    "USD_THB": 34,
+    "BDT_THB": 0.31,
+    "note": "1 USD ≈ THB 34 · 1 BDT ≈ THB 0.31 (approx, March 2025)"
+  },
+  "days": [
+    {
+      "n": 1, "date": "Wed 26 Mar", "lbl": "Arrive → Phuket",
+      "acts": [
+        { "t": "9:15 AM",  "tp": "flight",    "tx": "Depart Dhaka DAC — BS217, US-Bangla Airlines." },
+        { "t": "1:05 PM",  "tp": "flight",    "tx": "Land Bangkok Suvarnabhumi (BKK). Clear immigration + bags. Out by ~2:00 PM." },
+        { "t": "2:00 PM",  "tp": "transport", "tx": "Grab: Suvarnabhumi BKK → Don Mueang DMK. ~1–1.5 hrs. THB 350–450. Use Grab app to avoid overcharging." },
+        { "t": "2:30 PM",  "tp": "food",      "ic": "ti-coffee", "tx": "Quick bite at DMK: Airport Food Court (THB 100–150) or S&P Restaurant (sit-down, THB 250–350/person)." },
+        { "t": "5:15 PM",  "tp": "flight",    "tx": "Flight FD3009, Thai AirAsia: DMK → Phuket HKT. 1h 30m." },
+        { "t": "6:45 PM",  "tp": "flight",    "tx": "Arrive Phuket International Airport HKT." },
+        { "t": "7:30 PM",  "tp": "sleep",     "tx": "Check in: Quip Bed & Breakfast, Phuket." },
+        { "t": "8:30 PM",  "tp": "food",      "tx": "Dinner — hotel restaurant (easy option) or One Chun Café & Restaurant (authentic local Thai, walkable). THB 300–500." },
+        { "t": "10:00 PM", "tp": "night",     "tx": "Bangla Road nightlife, Patong Beach. Bars, live music, street entertainment. Grab ~15–20 mins, THB 300 each way." }
+      ]
+    },
+    {
+      "n": 2, "date": "Thu 27 Mar", "lbl": "Phi Phi Island",
+      "acts": [
+        { "t": "7:00 AM",  "tp": "transport", "tx": "Hotel pickup & transfer to pier. Included with most tours or short taxi THB 200–300." },
+        { "t": "8:00 AM",  "tp": "activity",  "ic": "ti-anchor",       "tx": "Full-day Phi Phi Island tour. Maya Bay, Monkey Beach, snorkeling spots & Viking Cave. ~THB 1,500/person. Lunch included on board. ~4 hrs return." },
+        { "t": "4:00 PM",  "tp": "transport", "tx": "Return boat to Rassada Pier, Phuket." },
+        { "t": "6:00 PM",  "tp": "sleep",     "tx": "Back at Quip B&B. Rest and freshen up." },
+        { "t": "8:00 PM",  "tp": "food",      "tx": "Dinner — hotel (relaxing) or Tu Kab Khao (southern Thai cuisine, 5-min walk). THB 400–700." }
+      ]
+    },
+    {
+      "n": 3, "date": "Fri 28 Mar", "lbl": "Phuket Highlights",
+      "acts": [
+        { "t": "8:00 AM",  "tp": "activity",  "ic": "ti-building",     "tx": "Big Buddha (free) + Wat Chalong (~THB 50 donation). ~2 hrs total. Taxi ~25 mins, THB 350. Cover knees and shoulders." },
+        { "t": "10:30 AM", "tp": "activity",  "ic": "ti-beach",        "tx": "Kata Beach. Swim, relax, and enjoy the clear water. ~2.5 hrs. Taxi ~15 mins, THB 200." },
+        { "t": "1:30 PM",  "tp": "food",      "ic": "ti-mountain",     "tx": "Karon Viewpoint — panoramic 3-bay view — then lunch at Heaven Restaurant. Taxi ~5 mins, THB 100–150." },
+        { "t": "3:30 PM",  "tp": "activity",  "ic": "ti-map-pin",      "tx": "Free time — Old Phuket Town: Sino-Portuguese heritage buildings, street art, cafés. Coffee at Three Monkeys Restaurant." },
+        { "t": "6:00 PM",  "tp": "activity",  "ic": "ti-star",         "tx": "Phuket Fantasea cultural show — elephants, acrobatics, magic. ~THB 1,800–2,000/person. Dinner included at venue. Taxi ~40 mins, THB 600 round trip." }
+      ]
+    },
+    {
+      "n": 4, "date": "Sat 29 Mar", "lbl": "Phuket → Bangkok",
+      "acts": [
+        { "t": "6:30 AM",  "tp": "transport", "tx": "Check out. Taxi to Phuket Airport HKT. ~30 mins, THB 300–400." },
+        { "t": "8:50 AM",  "tp": "flight",    "tx": "Flight FD8057, Thai AirAsia: HKT → Bangkok Don Mueang DMK. 1h 25m." },
+        { "t": "10:15 AM", "tp": "flight",    "tx": "Arrive Bangkok Don Mueang DMK." },
+        { "t": "11:00 AM", "tp": "transport", "ic": "ti-car",          "tx": "Grab to QG Resort. ~20 mins, THB 250." },
+        { "t": "11:30 AM", "tp": "sleep",     "tx": "Check in: QG Resort, Bangkok." },
+        { "t": "12:00 PM", "tp": "activity",  "ic": "ti-building",     "tx": "Grand Palace & Wat Phra Kaew. ~1.5 hrs. THB 400/person. Smart dress required — cover knees and shoulders. Sarongs at gate." },
+        { "t": "1:30 PM",  "tp": "activity",  "ic": "ti-building",     "tx": "Wat Arun (Temple of Dawn). THB 100/person. 5-min ferry from Tha Tien pier, THB 5." },
+        { "t": "3:00 PM",  "tp": "activity",  "ic": "ti-shopping-bag", "tx": "Chatuchak Weekend Market. Free. Hundreds of stalls — fashion, antiques, crafts, street food. Open weekends only." },
+        { "t": "5:30 PM",  "tp": "transport", "tx": "Return to QG Resort. Freshen up." },
+        { "t": "7:00 PM",  "tp": "food",      "ic": "ti-ship",         "tx": "Chao Phraya River Dinner Cruise. ~THB 1,500/person. City skyline at night, live music, buffet dinner." }
+      ]
+    },
+    {
+      "n": 5, "date": "Sun 30 Mar", "lbl": "Pattaya Day Trip",
+      "acts": [
+        { "t": "8:00 AM",  "tp": "transport", "tx": "Depart for Pattaya. ~2 hrs. Private taxi THB 1,500–2,000 round trip or shared minivan THB 200–300/person." },
+        { "t": "10:00 AM", "tp": "activity",  "ic": "ti-building",     "tx": "Sanctuary of Truth — all-wood ancient-style castle by the sea. THB 500/person. ~1.5 hrs." },
+        { "t": "12:00 PM", "tp": "activity",  "ic": "ti-beach",        "tx": "Pattaya Beach walk + Pattaya Floating Market. THB 200 entry. Thai street food, souvenirs, boat rides." },
+        { "t": "2:00 PM",  "tp": "food",      "ic": "ti-fish",         "tx": "Lunch at The Glass House Pattaya — beachfront seafood dining. THB 600–900/person." },
+        { "t": "4:00 PM",  "tp": "activity",  "ic": "ti-building",     "tx": "Big Buddha Hill (Wat Phra Yai). Free. 18-metre Buddha overlooking Pattaya Bay." },
+        { "t": "6:00 PM",  "tp": "night",     "tx": "Alcazar Cabaret Show (optional). THB 800/person. World-famous cabaret — spectacular costumes and choreography." },
+        { "t": "8:00 PM",  "tp": "transport", "tx": "Return to Bangkok. ~2 hrs." }
+      ]
+    },
+    {
+      "n": 6, "date": "Mon 31 Mar", "lbl": "Departure",
+      "acts": [
+        { "t": "10:30 AM", "tp": "transport", "ic": "ti-car",   "tx": "Airport transfer: QG Resort → Suvarnabhumi BKK. ~30 mins, THB 500. Book through hotel the night before." },
+        { "t": "11:30 AM", "tp": "activity",  "ic": "ti-check", "tx": "Arrive BKK. Check-in + security. US-Bangla Airlines BS218, Terminal 2." },
+        { "t": "1:55 PM",  "tp": "flight",    "tx": "Flight BS218 departs Bangkok BKK." },
+        { "t": "3:25 PM",  "tp": "flight",    "tx": "Land Dhaka DAC — Hazrat Shahjalal International Airport, Terminal 1." }
+      ]
+    }
+  ],
+  "budget": [
+    { "cat": "Transport — all routes (for 2)", "amount": "~9,000", "note": "BKK→DMK Grab · HKT taxis · Pattaya round trip 1,750 · Bangkok Grab/taxis · airport transfers", "isTotal": false },
+    { "cat": "Entry fees & tours (for 2)",    "amount": "~11,000", "note": "Phi Phi Island tour 3,000 · Grand Palace 800 · Wat Arun 200 · Sanctuary of Truth 1,000 · Floating Market 400 · Phuket Fantasea 4,000 · misc 1,600", "isTotal": false },
+    { "cat": "Food — 6 days (for 2)",         "amount": "~9,000",  "note": "Street food + local restaurants ~THB 1,000/day for two + dinner cruise 3,000", "isTotal": false },
+    { "cat": "Accommodation — 5 nights (for 2)","amount": "~7,200","note": "Quip B&B 3 nights · QG Resort 2 nights", "isTotal": false },
+    { "cat": "Total estimate",                "amount": "~36,200", "note": "Excludes international flights. Add Alcazar show 1,600 + personal spending buffer ~THB 3,000–5,000.", "isTotal": true }
+  ],
+  "notes": [
+    { "title": "Currency",   "text": "1 USD ≈ THB 34 · 1 BDT ≈ THB 0.31 (approx, March 2025)" },
+    { "title": "Transport",  "text": "Use Grab app for taxis in Bangkok and Phuket — avoids metered taxi haggling. For Pattaya, negotiate a fixed price before boarding or book a private car." },
+    { "title": "Airports",   "text": "Bangkok has two airports: Suvarnabhumi (BKK) for international, Don Mueang (DMK) for AirAsia domestic. BKK→DMK transfer takes ~1–1.5 hrs; allow at least 2 hrs buffer." },
+    { "title": "Dress Code", "text": "Cover knees and shoulders at Grand Palace, Wat Arun, and Wat Chalong. Sarongs can be borrowed at temple entrances." },
+    { "title": "Cash",       "text": "Carry THB cash — street food, tuk-tuks, and markets are cash-only. ATMs widely available in Bangkok and Phuket (THB 220 foreign fee per transaction)." }
+  ]
+}

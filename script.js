@@ -171,7 +171,7 @@ function renderTour(data) {
   renderHotels(data.hotels || []);
   renderDayNav(data.days || []);
   renderDays(data.days || []);
-  renderBudget(data.budget || []);
+  renderBudget(data.budget || [], data.meta.budgetSummary?.currency);
   renderNotes(data.notes || []);
   activateDay(0);
   _activeTab   = document.querySelector('.fh-tab[data-tab="flights"]');
@@ -324,7 +324,7 @@ function actHTML(a) {
 </div>`;
 }
 
-function renderBudget(budget) {
+function renderBudget(budget, currency) {
   const el = document.getElementById('budget-body');
   if (!el) return;
 
@@ -334,7 +334,7 @@ function renderBudget(budget) {
     ${b.cat}
     ${b.note ? `<div class="budget-note">${b.note}</div>` : ''}
   </td>
-  <td class="budget-td-val">${b.lkr}</td>
+  <td class="budget-td-val">${currency ? currency + ' ' : ''}${b.amount || '—'}</td>
 </tr>`).join('');
 
   const inner = el.querySelector('.budget-inner');
