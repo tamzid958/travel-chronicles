@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tour — Travel Chronicles</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@3/dist/tabler-icons.min.css">
+</head>
+<body class="tour-page">
+
+<nav class="nav">
+  <div class="nav-container">
+    <a href="index.html" class="nav-back"><i class="ti ti-arrow-left"></i> Back</a>
+    <span class="nav-tour-name" id="nav-tour-name"></span>
+  </div>
+</nav>
+
+<div id="main-content">
+
+  <!-- HERO -->
+  <div class="t-hero" id="tour-header"></div>
+
+  <!-- FLIGHTS + HOTELS tabbed card -->
+  <div class="t-section t-meta-section">
+    <div class="t-container">
+      <div class="t-meta-card">
+        <div class="fh-tabs">
+          <button class="fh-tab active" data-tab="flights" onclick="switchTab('flights')"><i class="ti ti-plane"></i> Flights</button>
+          <button class="fh-tab" data-tab="hotels" onclick="switchTab('hotels')"><i class="ti ti-bed"></i> Hotels</button>
+        </div>
+        <div class="fh-panel" id="fh-flights"><div id="flights-grid"></div></div>
+        <div class="fh-panel fh-hidden" id="fh-hotels"><div id="hotels-list"></div></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ITINERARY -->
+  <div class="t-section t-itinerary-section">
+    <div class="t-container">
+      <div class="t-section-label">Itinerary</div>
+      <div class="day-nav" id="day-nav-wrap">
+        <div class="day-nav-inner" id="day-nav-inner"></div>
+      </div>
+      <div id="days-container"></div>
+    </div>
+  </div>
+
+  <!-- ROUTE -->
+  <div class="t-section t-route-section">
+    <div class="t-container">
+      <div class="t-section-label">Route</div>
+      <div class="route-strip-inner" id="route-path"></div>
+    </div>
+  </div>
+
+  <!-- BUDGET + NOTES GRID -->
+  <div class="t-section t-bottom-section">
+    <div class="t-container t-bottom-grid">
+
+      <div class="t-meta-card">
+        <button class="collapsible-toggle" onclick="toggleCollapsible('budget-body')">
+          <span>Budget Breakdown</span>
+          <i class="ti ti-chevron-down c-toggle-icon"></i>
+        </button>
+        <div class="collapsible-body" id="budget-body">
+          <div class="budget-inner"></div>
+        </div>
+      </div>
+
+      <div class="t-meta-card">
+        <button class="collapsible-toggle" onclick="toggleCollapsible('notes-body')">
+          <span>Travel Notes</span>
+          <i class="ti ti-chevron-down c-toggle-icon"></i>
+        </button>
+        <div class="collapsible-body" id="notes-body">
+          <div class="notes-inner"></div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+</div>
+
+<script src="script.js"></script>
+<script>initTour();</script>
+</body>
+</html>

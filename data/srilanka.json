@@ -1,0 +1,174 @@
+{
+  "meta": {
+    "id": "srilanka",
+        "accentColor": "#059669",
+    "heroIcon": "ti-palm-tree",
+    "title": "Sri Lanka",
+    "destination": "Kandy · Ella · Colombo",
+    "subtitle": "Kandy → Nuwara Eliya → Ella → Colombo",
+    "tagline": "8 days · couple · budget",
+    "tripType": "Budget",
+    "durationDays": 8,
+    "startDate": "2026-05-24",
+    "endDate": "2026-05-31",
+    "dateLabel": "24–31 May 2026",
+    "travelers": 2,
+    "travelerLabel": "couple",
+    "highlights": ["Sigiriya Rock", "Nine Arch Bridge", "Bentota Beach"],
+    "budgetSummary": { "currency": "LKR", "total": "~77,000", "usdEquiv": "~$241", "note": "Excludes flights, for 2" }
+  },
+  "flights": {
+    "outbound": {
+      "label": "Outbound",
+      "route": "DAC → CMB",
+      "detail": "Sun 24 May · 12:55 PM → 3:40 PM · UL190"
+    },
+    "return": {
+      "label": "Return",
+      "route": "CMB → DAC",
+      "detail": "Sun 31 May · 7:45 AM → 11:30 AM · UL189"
+    }
+  },
+  "hotels": [
+    { "name": "Hotel Casamara", "location": "Kandy",   "nights": 3, "dateRange": "24–27 May", "priceNote": "~LKR 3,000–4,000/night" },
+    { "name": "Zion View Ella", "location": "Ella",    "nights": 2, "dateRange": "27–29 May", "priceNote": "~LKR 3,000–4,000/night" },
+    { "name": "Clock Inn Colombo", "location": "Colombo", "nights": 2, "dateRange": "29–31 May", "priceNote": "~LKR 2,500–3,500/night" }
+  ],
+  "route": [
+    { "city": "CMB",          "via": null },
+    { "city": "Kandy",        "via": "bus" },
+    { "city": "Sigiriya",     "via": "day trip·bus" },
+    { "city": "Nuwara Eliya", "via": "bus·stop" },
+    { "city": "Ella",         "via": "bus" },
+    { "city": "Colombo",      "via": "bus" },
+    { "city": "Bentota",      "via": "train·day trip" },
+    { "city": "CMB",          "via": null }
+  ],
+  "exchangeRates": {
+    "USD_LKR": 319,
+    "BDT_LKR": 2.9,
+    "note": "1 USD ≈ LKR 319 · 1 BDT ≈ LKR 2.9 (approx, March 2026)"
+  },
+  "days": [
+    {
+      "n": 1, "date": "Sun 24 May", "lbl": "Arrive → Kandy",
+      "acts": [
+        { "t": "12:55 PM", "tp": "flight",    "tx": "Depart Dhaka DAC — UL190, SriLankan Airlines, Terminal 1" },
+        { "t": "3:40 PM",  "tp": "flight",    "tx": "Land Colombo CMB. Clear immigration + bags. Out by ~4:30 PM." },
+        { "t": "4:30 PM",  "tp": "transport", "tx": "Bus from outside arrivals → Pettah Central Bus Stand, Colombo. ~1 hr. LKR 150–200/person." },
+        { "t": "5:30 PM",  "tp": "transport", "tx": "Bus: Pettah → Kandy Town. Every 20–30 min. ~3 hrs. LKR 200–250/person." },
+        { "t": "~8:30 PM", "tp": "transport", "ic": "ti-car", "tx": "Tuk-tuk: Kandy bus stand → Hotel Casamara. LKR 250–350. Let hotel know you are arriving late." },
+        { "t": "9:00 PM",  "tp": "sleep",     "tx": "Check in: Hotel Casamara, Kandy." },
+        { "t": "9:30 PM",  "tp": "food",      "tx": "Kottu roti from a night stall nearby. LKR 400–600. Early rest." }
+      ]
+    },
+    {
+      "n": 2, "date": "Mon 25 May", "lbl": "Kandy — Culture",
+      "acts": [
+        { "t": "9:00 AM",  "tp": "food",     "ic": "ti-coffee",       "tx": "Hoppers + coconut sambol at local kade. LKR 250–350/person." },
+        { "t": "10:00 AM", "tp": "activity", "ic": "ti-walk",         "tx": "Kandy Lake loop walk. Free. ~45 min. Calm morning start." },
+        { "t": "11:00 AM", "tp": "activity", "ic": "ti-building",     "tx": "Natha Devale + Vishnu Devale — 14th-century shrines by the lake. Free. Remove shoes." },
+        { "t": "12:00 PM", "tp": "activity", "ic": "ti-building",     "tx": "Temple of the Tooth Relic — noon pooja. LKR 2,000/person. Cover knees + shoulders. Arrive 15 min early." },
+        { "t": "1:30 PM",  "tp": "food",     "tx": "Rice + curry lunch at local restaurant. LKR 400–600." },
+        { "t": "3:00 PM",  "tp": "activity", "ic": "ti-shopping-bag", "tx": "Kandy Bazaar — spices, batik, street food, local life. Free." },
+        { "t": "5:00 PM",  "tp": "activity", "tx": "Kandyan Cultural Show at YMBA Hall — drums, traditional dance, fire-walking. LKR 600–800/person. Buy at door." },
+        { "t": "7:30 PM",  "tp": "food",     "tx": "Dinner — street food near Dalada Veediya or Thambapanni Collective. LKR 500–800." },
+        { "t": "9:00 PM",  "tp": "night",    "tx": "The Pub or Empire Pub on Dalada Veediya. Open till midnight." }
+      ]
+    },
+    {
+      "n": 3, "date": "Tue 26 May", "lbl": "Sigiriya Day Trip",
+      "acts": [
+        { "t": "6:00 AM",  "tp": "food",     "ic": "ti-coffee",   "tx": "Quick tea + biscuits. Kiosks near Kandy bus stand open from 5:30 AM." },
+        { "t": "6:30 AM",  "tp": "transport", "tx": "Bus: Kandy Goods Shed Bus Stand → Dambulla. ~2 hrs. LKR 150–200/person." },
+        { "t": "8:30 AM",  "tp": "transport", "ic": "ti-car",     "tx": "Tuk-tuk: Dambulla → Sigiriya. 20 min. LKR 700–900 round-trip with wait. Fix price before boarding." },
+        { "t": "9:00 AM",  "tp": "activity", "ic": "ti-mountain", "tx": "Sigiriya Rock Fortress. Bangladesh = SAARC — show passport for ~$20/person (vs $35 full rate). ~1.5 hrs to summit: frescoes, Mirror Wall, Lion's Paw, 360° views." },
+        { "t": "11:30 AM", "tp": "food",     "tx": "Lunch at local kade near Sigiriya. LKR 400–600." },
+        { "t": "1:00 PM",  "tp": "activity", "ic": "ti-mountain", "tx": "Pidurangala Rock — LKR 1,000/person, 10 min tuk-tuk from Sigiriya. Top-down aerial view of Sigiriya. 45-min climb, far fewer crowds, better photo angle." },
+        { "t": "3:00 PM",  "tp": "transport", "tx": "Bus: Dambulla → Kandy. Arrive ~5:00 PM." },
+        { "t": "6:00 PM",  "tp": "food",     "tx": "Light dinner. Pack bags tonight for tomorrow's move to Ella." }
+      ]
+    },
+    {
+      "n": 4, "date": "Wed 27 May", "lbl": "Kandy → Nuwara Eliya → Ella",
+      "acts": [
+        { "t": "7:00 AM",  "tp": "food",     "ic": "ti-coffee",  "tx": "Quick breakfast + check out." },
+        { "t": "8:00 AM",  "tp": "transport", "tx": "Bus: Kandy Goods Shed Bus Stand → Nuwara Eliya. ~2–2.5 hrs. LKR 250–350/person. Road climbs steadily through tea estates — genuinely beautiful." },
+        { "t": "10:30 AM", "tp": "activity", "ic": "ti-tree",    "tx": "Nuwara Eliya stopover (~2 hrs). Gregory Lake walk (free). Pedro or Mackwoods Tea Factory tour — LKR 500–700/person. Colonial hill station with cool mountain air." },
+        { "t": "12:30 PM", "tp": "food",     "tx": "Lunch in Nuwara Eliya town. LKR 400–600." },
+        { "t": "1:30 PM",  "tp": "transport", "tx": "Bus: Nuwara Eliya → Ella. ~2.5–3 hrs. LKR 250–350/person. Through Haputale — highland scenery the whole way." },
+        { "t": "~4:30 PM", "tp": "transport", "ic": "ti-map-pin", "tx": "Arrive Ella. Tuk-tuk to Zion View Ella. LKR 250–350." },
+        { "t": "5:00 PM",  "tp": "sleep",    "tx": "Check in: Zion View Ella. Panoramic valley views from the property." },
+        { "t": "7:00 PM",  "tp": "food",     "tx": "Dinner on Ella main street. LKR 800–1,200." },
+        { "t": "9:00 PM",  "tp": "night",    "tx": "Retro Bar or rooftop cafe. Small town, easy evening." }
+      ]
+    },
+    {
+      "n": 5, "date": "Thu 28 May", "lbl": "Ella — Hike Day",
+      "acts": [
+        { "t": "7:00 AM",  "tp": "food",     "ic": "ti-coffee",  "tx": "Breakfast at hillside cafe. LKR 400–600." },
+        { "t": "8:00 AM",  "tp": "activity", "ic": "ti-mountain", "tx": "Little Adam's Peak hike. Free. Easy 1.5 hrs return. 360° views over Ella Gap. Go early — cooler and quieter." },
+        { "t": "10:30 AM", "tp": "activity", "tx": "Nine Arch Bridge — 15-min walk from town. Free. Wait for a train to pass through the arch (~2–3 hr intervals). Most photographed spot in Ella." },
+        { "t": "12:30 PM", "tp": "food",     "tx": "Lunch on Ella main street. LKR 500–800." },
+        { "t": "2:00 PM",  "tp": "transport", "ic": "ti-car",    "tx": "Tuk-tuk to Ravana Waterfalls. 3 km. LKR 300–400 round trip. Entry LKR 200/person." },
+        { "t": "4:00 PM",  "tp": "activity", "ic": "ti-beach",   "tx": "Back in Ella. Rooftop cafe, valley sunset." },
+        { "t": "7:00 PM",  "tp": "food",     "tx": "Dinner + Ella bars. Retro Bar, Dream Cafe. LKR 800–1,200." }
+      ]
+    },
+    {
+      "n": 6, "date": "Fri 29 May", "lbl": "Ella → Colombo",
+      "acts": [
+        { "t": "7:30 AM",  "tp": "food",     "ic": "ti-coffee",      "tx": "Breakfast + check out by 8:00 AM." },
+        { "t": "8:00 AM",  "tp": "transport", "tx": "Bus: Ella → Wellawaya. ~35–45 min. LKR 60–100/person." },
+        { "t": "9:00 AM",  "tp": "transport", "tx": "Bus: Wellawaya → Colombo Pettah. ~5.5 hrs. LKR 350–450/person. Frequent departures throughout the morning." },
+        { "t": "~2:30 PM", "tp": "transport", "ic": "ti-map-pin",    "tx": "Arrive Colombo Pettah. Tuk-tuk to Clock Inn Colombo. LKR 300–450." },
+        { "t": "3:00 PM",  "tp": "sleep",    "tx": "Check in: Clock Inn Colombo." },
+        { "t": "4:30 PM",  "tp": "activity", "ic": "ti-building",    "tx": "Colombo Fort walk — Dutch colonial buildings, Old Parliament, Lighthouse Clock Tower. Free." },
+        { "t": "5:30 PM",  "tp": "activity", "ic": "ti-building",    "tx": "Jami Ul-Alfar Mosque (Red Mosque) — candy-striped Indo-Saracenic architecture. Free. Dress modestly." },
+        { "t": "7:00 PM",  "tp": "activity", "ic": "ti-shopping-bag","tx": "Pettah Market evening — street food, street life." },
+        { "t": "8:30 PM",  "tp": "food",     "tx": "Dinner: Nana's Restaurant, Pettah — authentic Sri Lankan. LKR 500–700/person." },
+        { "t": "10:30 PM", "tp": "night",    "tx": "Colombo 3 nightlife: tuk-tuk to Cricket Club Cafe, Stack or Upstairs Colombo. Open till 2 AM." }
+      ]
+    },
+    {
+      "n": 7, "date": "Sat 30 May", "lbl": "Bentota Day + Last Night",
+      "acts": [
+        { "t": "9:00 AM",  "tp": "food",     "ic": "ti-coffee",  "tx": "Hoppers from roadside stall near hotel. LKR 200–300." },
+        { "t": "10:00 AM", "tp": "transport", "ic": "ti-train",  "tx": "Train: Colombo Fort → Aluthgama. Southern Coastal Line — 100% operational. ~1.5–2 hrs. LKR 120–180/person. Ocean views along the coast." },
+        { "t": "12:00 PM", "tp": "transport", "ic": "ti-car",    "tx": "Tuk-tuk: Aluthgama station → Bentota Beach. LKR 250–350." },
+        { "t": "12:30 PM", "tp": "activity", "ic": "ti-beach",   "tx": "Bentota Beach — white sand, calm turquoise water. Swim and unwind." },
+        { "t": "1:00 PM",  "tp": "food",     "ic": "ti-fish",    "tx": "Grilled fish + rice at beach shack. LKR 700–1,000/plate." },
+        { "t": "2:30 PM",  "tp": "activity", "tx": "Madu River boat tour from the jetty. ~1.5 hrs. LKR 2,000–2,500 for the boat. Mangroves, monitor lizards, mugger crocodiles, cinnamon island, birds." },
+        { "t": "4:30 PM",  "tp": "transport", "ic": "ti-train",  "tx": "Train: Aluthgama → Colombo Fort. LKR 120–180/person. ~1.5–2 hrs." },
+        { "t": "7:30 PM",  "tp": "activity", "ic": "ti-building","tx": "Gangaramaya Temple — lit beautifully at night. LKR 300/person. Thai, Chinese, Indian architecture blend." },
+        { "t": "9:00 PM",  "tp": "food",     "tx": "Final dinner: Dutch Hospital Shopping Precinct — walkable from hotel. LKR 1,000–1,500." },
+        { "t": "10:30 PM", "tp": "night",    "tx": "Last night out — Dutch Hospital bars or Colombo 3. Home by midnight." },
+        { "t": "12:00 AM", "tp": "sleep",    "ic": "ti-luggage", "tx": "Pack everything. Set 4:30 AM alarm. Book airport taxi through hotel tonight." }
+      ]
+    },
+    {
+      "n": 8, "date": "Sun 31 May", "lbl": "Departure",
+      "acts": [
+        { "t": "4:30 AM", "tp": "sleep",    "ic": "ti-alarm", "tx": "Wake up." },
+        { "t": "5:00 AM", "tp": "transport","ic": "ti-car",   "tx": "Pre-booked taxi: Clock Inn Colombo → Bandaranaike Airport CMB. ~45 min. LKR 3,000–4,500. Book night before through hotel." },
+        { "t": "5:45 AM", "tp": "activity", "ic": "ti-check", "tx": "Arrive CMB. Check-in + security. Terminal 1, SriLankan Airlines UL189." },
+        { "t": "7:45 AM", "tp": "flight",   "tx": "Flight UL189 departs CMB." },
+        { "t": "11:30 AM","tp": "flight",   "tx": "Land Dhaka DAC — Terminal 1, Hazrat Shahjalal International Airport." }
+      ]
+    }
+  ],
+  "budget": [
+    { "cat": "Transport — all routes (for 2)", "lkr": "~14,000", "note": "Airport bus · Pettah→Kandy · Dambulla bus return · Sigiriya tuk-tuk · Kandy→NE→Ella buses · Ella→Wellawaya→Colombo · coastal train return · misc tuk-tuks · airport taxi", "isTotal": false },
+    { "cat": "Entry fees (for 2)",             "lkr": "~22,000", "note": "Sigiriya SAARC ~$20×2 (12,800) · Temple of Tooth 4,000 · Pidurangala 2,000 · Kandyan Show 1,400 · Tea factory 1,400 · Ravana Falls 400", "isTotal": false },
+    { "cat": "Food — 7 days (for 2)",          "lkr": "~17,500", "note": "Street food + local kades, 2026 prices, ~LKR 2,500/day for two", "isTotal": false },
+    { "cat": "Accommodation — 7 nights (for 2)","lkr": "~23,500","note": "Kandy 3×3,500 · Ella 2×3,500 · Colombo 2×3,000", "isTotal": false },
+    { "cat": "Total estimate",                 "lkr": "~77,000", "note": "Excludes flights. Add personal spending + nightlife buffer ~LKR 5,000–10,000.", "isTotal": true }
+  ],
+  "notes": [
+    "1 USD ≈ LKR 319 · 1 BDT ≈ LKR 2.9 (approx, March 2026)",
+    "All hill country travel by road (bus) — Kandy, Nuwara Eliya, Ella roads fully operational.",
+    "Southern Coastal Line train (Colombo–Bentota) is fully operational with regular daily services.",
+    "Carry cash everywhere. ATMs in Kandy and Colombo; limited in Ella. Change money at Colombo or Kandy.",
+    "All religious sites: cover knees + shoulders. Keep a sarong each. Negotiate tuk-tuks before boarding."
+  ]
+}

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Travel Chronicles — My Tours</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@3/dist/tabler-icons.min.css">
+</head>
+<body>
+
+<nav class="nav">
+  <div class="nav-container">
+    <span class="nav-logo"><i class="ti ti-map-pin-2"></i> Travel Chronicles</span>
+    <div class="nav-subtitle">A curated collection of journeys</div>
+  </div>
+</nav>
+
+<section class="hero">
+  <div class="hero-content">
+    <div class="hero-eyebrow">Explore My Journeys</div>
+    <h1>Travel <span class="highlight-accent">Chronicles</span></h1>
+    <p class="hero-sub">A carefully curated collection of my travels across the globe. Each journey tells a story.</p>
+    <div class="hero-scroll-indicator">
+      <span>Scroll to discover</span>
+      <div class="scroll-arrow"><i class="ti ti-arrow-down"></i></div>
+    </div>
+  </div>
+  <div class="hero-gradient"></div>
+</section>
+
+<section class="stats-section">
+  <div class="stats-container">
+    <div class="stat-card">
+      <div class="stat-icon"><i class="ti ti-globe"></i></div>
+      <div class="stat-num" id="stat-countries">—</div>
+      <div class="stat-lbl">Countries Visited</div>
+    </div>
+    <div class="stat-card">
+      <div class="stat-icon"><i class="ti ti-sun"></i></div>
+      <div class="stat-num" id="stat-days">—</div>
+      <div class="stat-lbl">Days Abroad</div>
+    </div>
+    <div class="stat-card">
+      <div class="stat-icon"><i class="ti ti-backpack"></i></div>
+      <div class="stat-num" id="stat-trips">—</div>
+      <div class="stat-lbl">Adventures</div>
+    </div>
+  </div>
+</section>
+
+<section class="collection-section">
+  <div class="section-container">
+    <div class="section-header">
+      <h2>My Collection</h2>
+      <p>Each card represents a complete travel experience. Click to explore the full itinerary, accommodations, and planning details.</p>
+    </div>
+
+    <div class="cards-grid" id="cards-grid">
+      <div class="loading-state"><div class="spinner"></div> Loading adventures…</div>
+    </div>
+  </div>
+</section>
+
+<footer class="site-footer">
+  <div class="footer-content">
+    <p>Handcrafted travel guide © 2026</p>
+    <p class="footer-meta">Built with care and countless spreadsheets</p>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+<script>initIndex();</script>
+</body>
+</html>
