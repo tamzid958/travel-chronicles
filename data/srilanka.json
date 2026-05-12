@@ -16,7 +16,7 @@
     "travelers": 2,
     "travelerLabel": "couple",
     "highlights": ["Sigiriya Rock", "Nine Arch Bridge", "Bentota Beach"],
-    "budgetSummary": { "currency": "LKR", "total": "~77,000", "usdEquiv": "~$241", "note": "Excludes flights, for 2" }
+    "budgetSummary": { "currency": "LKR", "total": "~105,225", "usdEquiv": "~$330", "note": "Excludes flights, for 2" }
   },
   "flights": {
     "outbound": {
@@ -31,9 +31,9 @@
     }
   },
   "hotels": [
-    { "name": "Kandy City Village", "location": "Kandy",   "nights": 3, "dateRange": "24–27 May", "checkIn": "24 May 12:00", "checkOut": "27 May 10:00" },
-    { "name": "Ella Odyssey Inn",   "location": "Ella",    "nights": 2, "dateRange": "27–29 May", "checkIn": "27 May 15:00", "checkOut": "29 May 11:00" },
-    { "name": "Grand Oriental Hotel","location": "Colombo", "nights": 2, "dateRange": "29–31 May", "checkIn": "29 May 14:00", "checkOut": "31 May 12:00" }
+    { "name": "Kandy City Village",  "location": "Kandy",   "nights": 3, "dateRange": "24–27 May", "checkIn": "24 May 12:00", "checkOut": "27 May 10:00", "totalLKR": 19379, "perNightLKR": 6460 },
+    { "name": "Ella Odyssey Inn",    "location": "Ella",    "nights": 2, "dateRange": "27–29 May", "checkIn": "27 May 15:00", "checkOut": "29 May 11:00", "totalLKR": 16221, "perNightLKR": 8111 },
+    { "name": "Grand Oriental Hotel","location": "Colombo", "nights": 2, "dateRange": "29–31 May", "checkIn": "29 May 14:00", "checkOut": "31 May 12:00", "totalLKR": 16125, "perNightLKR": 8063 }
   ],
   "route": [
     { "city": "CMB",          "via": null },
@@ -162,8 +162,8 @@
     { "cat": "Transport — all routes (for 2)", "lkr": "~14,000", "note": "Airport bus · Pettah→Kandy · Dambulla bus return · Sigiriya tuk-tuk · Kandy→NE→Ella buses · Ella→Wellawaya→Colombo · coastal train return · misc tuk-tuks · airport taxi", "isTotal": false },
     { "cat": "Entry fees (for 2)",             "lkr": "~22,000", "note": "Sigiriya SAARC ~$20×2 (12,800) · Temple of Tooth 4,000 · Pidurangala 2,000 · Kandyan Show 1,400 · Tea factory 1,400 · Ravana Falls 400", "isTotal": false },
     { "cat": "Food — 7 days (for 2)",          "lkr": "~17,500", "note": "Street food + local kades, 2026 prices, ~LKR 2,500/day for two", "isTotal": false },
-    { "cat": "Accommodation — 7 nights (for 2)","lkr": "~23,500","note": "Kandy City Village 3 nights · Ella Odyssey Inn 2 nights · Grand Oriental Hotel 2 nights", "isTotal": false },
-    { "cat": "Total estimate",                 "lkr": "~77,000", "note": "Excludes flights. Add personal spending + nightlife buffer ~LKR 5,000–10,000.", "isTotal": true }
+    { "cat": "Accommodation — 7 nights (for 2)","lkr": "51,725",  "note": "Kandy City Village LKR 19,379 (3 nts) · Ella Odyssey Inn LKR 16,221 (2 nts) · Grand Oriental Hotel LKR 16,125 (2 nts)", "isTotal": false },
+    { "cat": "Total estimate",                 "lkr": "~105,225","note": "Excludes flights. Add personal spending + nightlife buffer ~LKR 5,000–10,000.", "isTotal": true }
   ],
   "notes": [
     { "title": "Currency",      "text": "1 USD ≈ LKR 319 · 1 BDT ≈ LKR 2.9 (approx, March 2026)" },
