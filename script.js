@@ -11,6 +11,12 @@ const ACT = {
 };
 
 /* ── Shared utils ──────────────────────────────────────────── */
+async function fetchJSON(url) {
+  const r = await fetch(url);
+  if (!r.ok) throw new Error(`Failed to load ${url}`);
+  return r.json();
+}
+
 function getStatus(startDate, endDate) {
   const now   = new Date();
   const start = new Date(startDate + 'T00:00:00');
@@ -18,6 +24,14 @@ function getStatus(startDate, endDate) {
   if (now < start) return { label: 'Upcoming',   cls: 'badge-upcoming'  };
   if (now > end)   return { label: 'Completed',  cls: 'badge-completed' };
   return               { label: 'In Progress', cls: 'badge-active'    };
+}
+
+function badgeHTML(status) {
+  return `<span class="badge ${status.cls}"><span class="badge-dot"></span>${status.label}</span>`;
+}
+
+function chipHTML(label) {
+  return `<span class="chip">${label}</span>`;
 }
 
 let _activeTab = null, _activePanel = null;
@@ -39,10 +53,15 @@ function toggleCollapsible(id) {
 
 /* ── INDEX PAGE ────────────────────────────────────────────── */
 async function initIndex() {
-  const files  = await fetch('data/tours.json').then(r => r.json());
-  const tours  = await Promise.all(files.map(f => fetch('data/' + f).then(r => r.json())));
-  renderStats(tours);
-  renderCards(tours);
+  try {
+    const files = await fetchJSON('data/tours.json');
+    const tours = await Promise.all(files.map(f => fetchJSON('data/' + f)));
+    renderStats(tours);
+    renderCards(tours);
+  } catch (e) {
+    const grid = document.getElementById('cards-grid');
+    if (grid) grid.innerHTML = `<div class="loading-state">Failed to load tours.</div>`;
+  }
 }
 
 function renderStats(tours) {
@@ -79,7 +98,7 @@ function cardHTML(t) {
   const status = getStatus(m.startDate, m.endDate);
   const budget = t.budget?.find(b => b.isTotal) || {};
   const bs     = m.budgetSummary || {};
-  const accent = m.accentColor || '#d4714d';
+  const accent = m.accentColor || 'var(--accent-prime)';
   const id     = m.id;
 
   const highlights = (m.highlights || []).map(h =>
@@ -87,7 +106,7 @@ function cardHTML(t) {
   ).join('');
 
   const chips = [m.tripType, `${m.durationDays} days`, `${m.travelers} travelers`]
-    .filter(Boolean).map(c => `<span class="chip">${c}</span>`).join('');
+    .filter(Boolean).map(chipHTML).join('');
 
   return `
 <a href="tour.html?tour=${id}.json" class="card" style="text-decoration:none">
@@ -101,7 +120,7 @@ function cardHTML(t) {
         <div class="card-country">${m.title}</div>
         <div class="card-dest">${m.destination || m.subtitle || ''}</div>
       </div>
-      <span class="badge ${status.cls}"><span class="badge-dot"></span>${status.label}</span>
+      ${badgeHTML(status)}
     </div>
     <div class="card-chips">${chips}</div>
   </div>
@@ -128,10 +147,7 @@ async function initTour() {
 
   const file = param.endsWith('.json') ? param : param + '.json';
   try {
-    const data = await fetch('data/' + file).then(r => {
-      if (!r.ok) throw new Error('Not found');
-      return r.json();
-    });
+    const data = await fetchJSON('data/' + file);
     renderTour(data);
   } catch {
     showTourError('Tour not found: ' + file);
@@ -172,8 +188,8 @@ function renderTourHeader(m) {
       <div class="t-hero-flag">${m.flag || ''}</div>
       <div class="t-hero-body">
         <div class="t-hero-eyebrow">
-          <span class="badge ${status.cls}"><span class="badge-dot"></span>${status.label}</span>
-          ${m.tripType ? `<span class="chip">${m.tripType}</span>` : ''}
+          ${badgeHTML(status)}
+          ${m.tripType ? chipHTML(m.tripType) : ''}
         </div>
         <h1 class="t-hero-title">${m.title}</h1>
         <p class="t-hero-sub">${m.subtitle || ''}</p>
@@ -199,16 +215,15 @@ function renderRoute(route, hotels) {
     const isFirst   = i === 0;
     const isLast    = i === route.length - 1;
     const isAirport = stop.via == null;
-    const via       = stop.via || '';
     const cityKey   = stop.city.toLowerCase();
 
     let type = 'stopover', sub = '';
     if (isAirport) {
       type = 'airport';
       sub = isFirst ? 'Arrival' : 'Departure';
-    } else if (via.includes('day trip')) {
+    } else if (stop.stopType === 'daytrip') {
       type = 'daytrip'; sub = 'Day trip';
-    } else if (via.includes('stop')) {
+    } else if (stop.stopType === 'stopover') {
       type = 'stopover'; sub = 'Stopover';
     } else if (hotelMap[cityKey]) {
       const h = hotelMap[cityKey];
@@ -218,9 +233,8 @@ function renderRoute(route, hotels) {
     let transport = '';
     if (!isLast && !isAirport) {
       const nextVia = route[i + 1].via || '';
-      if (nextVia.includes('train'))         transport = 'Train';
-      else if (nextVia.includes('day trip')) transport = 'Day trip';
-      else                                   transport = 'Bus';
+      if (nextVia === 'train') transport = 'Train';
+      else                     transport = 'Bus';
     }
 
     rows.push(`<tr class="rs-row rs-type-${type}">
@@ -259,29 +273,28 @@ function renderHotels(hotels) {
 </div>`).join('');
 }
 
+let _dayBtns = null, _daySections = null;
+
 function renderDayNav(days) {
   const el = document.getElementById('day-nav-inner');
   if (!el) return;
   el.innerHTML = days.map((d, i) => `
-<button class="day-btn" data-i="${i}" onclick="activateDay(${i})">
+<button class="day-btn" data-day="${i}" onclick="activateDay(${i})">
   Day ${d.n}
 </button>`).join('');
+  _dayBtns = el.querySelectorAll('.day-btn');
 }
 
 function activateDay(i) {
-  document.querySelectorAll('.day-btn').forEach((b, j) => {
-    b.classList.toggle('active', j === i);
-  });
-  document.querySelectorAll('.day-section').forEach((s, j) => {
-    s.classList.toggle('visible', j === i);
-  });
+  _dayBtns?.forEach(b => b.classList.toggle('active', +b.dataset.day === i));
+  _daySections?.forEach(s => s.classList.toggle('visible', +s.dataset.day === i));
 }
 
 function renderDays(days) {
   const el = document.getElementById('days-container');
   if (!el) return;
   el.innerHTML = days.map((d, i) => `
-<section class="day-section" id="day-${i}">
+<section class="day-section" data-day="${i}" id="day-${i}">
   <div class="day-heading">
     <div class="day-num">Day ${d.n}</div>
     <div class="day-title">${d.lbl}</div>
@@ -289,6 +302,7 @@ function renderDays(days) {
   </div>
   <div class="activities">${(d.acts || []).map(actHTML).join('')}</div>
 </section>`).join('');
+  _daySections = el.querySelectorAll('.day-section');
 }
 
 function actHTML(a) {
@@ -333,18 +347,18 @@ function renderNotes(notes) {
   const inner = el.querySelector('.notes-inner');
   if (inner) inner.innerHTML = notes.map(n => `
 <div class="note-item">
-  <div class="note-title">${n.title || 'Note'}</div>
-  <div class="note-text">${n.text || n}</div>
+  <div class="note-title">${n.title}</div>
+  <div class="note-text">${n.text}</div>
 </div>`).join('');
 }
 
 function showTourError(msg) {
   const main = document.getElementById('main-content');
   if (main) main.innerHTML = `
-<div style="padding:48px 24px;text-align:center">
-  <div style="font-size:48px;margin-bottom:16px">🗺️</div>
-  <h2 style="font-family:'Lora',serif;font-size:24px;margin-bottom:8px">Tour not found</h2>
-  <p style="color:var(--t2);font-size:14px;margin-bottom:24px">${msg}</p>
-  <a href="index.html" style="font-size:14px;font-weight:600;color:var(--accent-prime);text-decoration:underline">← Back to all tours</a>
+<div class="tour-error">
+  <div class="tour-error-icon">🗺️</div>
+  <h2 class="tour-error-title">Tour not found</h2>
+  <p class="tour-error-msg">${msg}</p>
+  <a href="index.html" class="tour-error-link">← Back to all tours</a>
 </div>`;
 }

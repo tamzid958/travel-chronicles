@@ -1,8 +1,9 @@
 {
   "meta": {
     "id": "srilanka",
-        "accentColor": "#059669",
+    "accentColor": "#059669",
     "heroIcon": "ti-palm-tree",
+    "flag": "🇱🇰",
     "title": "Sri Lanka",
     "destination": "Kandy · Ella · Colombo",
     "subtitle": "Kandy → Nuwara Eliya → Ella → Colombo",
@@ -37,11 +38,11 @@
   "route": [
     { "city": "CMB",          "via": null },
     { "city": "Kandy",        "via": "bus" },
-    { "city": "Sigiriya",     "via": "day trip·bus" },
-    { "city": "Nuwara Eliya", "via": "bus·stop" },
+    { "city": "Sigiriya",     "via": "bus",   "stopType": "daytrip"  },
+    { "city": "Nuwara Eliya", "via": "bus",   "stopType": "stopover" },
     { "city": "Ella",         "via": "bus" },
     { "city": "Colombo",      "via": "bus" },
-    { "city": "Bentota",      "via": "train·day trip" },
+    { "city": "Bentota",      "via": "train", "stopType": "daytrip"  },
     { "city": "CMB",          "via": null }
   ],
   "exchangeRates": {
@@ -165,10 +166,10 @@
     { "cat": "Total estimate",                 "lkr": "~77,000", "note": "Excludes flights. Add personal spending + nightlife buffer ~LKR 5,000–10,000.", "isTotal": true }
   ],
   "notes": [
-    "1 USD ≈ LKR 319 · 1 BDT ≈ LKR 2.9 (approx, March 2026)",
-    "All hill country travel by road (bus) — Kandy, Nuwara Eliya, Ella roads fully operational.",
-    "Southern Coastal Line train (Colombo–Bentota) is fully operational with regular daily services.",
-    "Carry cash everywhere. ATMs in Kandy and Colombo; limited in Ella. Change money at Colombo or Kandy.",
-    "All religious sites: cover knees + shoulders. Keep a sarong each. Negotiate tuk-tuks before boarding."
+    { "title": "Currency",      "text": "1 USD ≈ LKR 319 · 1 BDT ≈ LKR 2.9 (approx, March 2026)" },
+    { "title": "Transport",     "text": "All hill country travel by road (bus) — Kandy, Nuwara Eliya, Ella roads fully operational." },
+    { "title": "Coastal Train", "text": "Southern Coastal Line train (Colombo–Bentota) is fully operational with regular daily services." },
+    { "title": "Cash",          "text": "Carry cash everywhere. ATMs in Kandy and Colombo; limited in Ella. Change money at Colombo or Kandy." },
+    { "title": "Dress Code",    "text": "All religious sites: cover knees + shoulders. Keep a sarong each. Negotiate tuk-tuks before boarding." }
   ]
 }
