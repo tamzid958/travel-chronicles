@@ -238,9 +238,35 @@ body.tour-page { background: var(--bg); }
 .note-text { font-size: 13px; color: var(--t2); margin-top: 5px; line-height: 1.6; }
 
 @media (max-width: 600px) {
+  /* ── Tour page ─────────────────────────────────────────────── */
   .rs-td-city { font-size: 12px; }
   .rs-transport { font-size: 10px; }
   .t-container { padding: 0 16px; }
   .t-hero-inner { padding: 0 16px; }
   .t-hero-stats { gap: 14px; }
+
+  /* ── Index page ────────────────────────────────────────────── */
+  .nav { padding: 12px 16px; }
+  .nav-subtitle { display: none; }
+
+  .hero { padding: 20px 16px; }
+
+  .stats-section { padding: 10px 16px; }
+  .stats-container { gap: 8px; }
+  .stat-card {
+    flex: 1;
+    min-width: 0;
+    padding: 8px 6px;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 3px;
+  }
+  .stat-icon { font-size: 14px; }
+  .stat-num { font-size: 16px; }
+  .stat-lbl { font-size: 10px; }
+
+  .collection-section { padding: 20px 16px 32px; }
+  .section-header { margin-bottom: 14px; }
+  .cards-grid { grid-template-columns: 1fr; gap: 12px; }
 }
