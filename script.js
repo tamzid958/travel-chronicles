@@ -334,7 +334,7 @@ function renderBudget(budget) {
     ${b.cat}
     ${b.note ? `<div class="budget-note">${b.note}</div>` : ''}
   </td>
-  <td class="budget-td-val">${b.lkr}</td>
+  <td class="budget-td-val">${b.lkr || b.thb || '—'}</td>
 </tr>`).join('');
 
   const inner = el.querySelector('.budget-inner');
