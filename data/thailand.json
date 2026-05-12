@@ -3,7 +3,6 @@
     "id": "thailand",
     "accentColor": "#0284c7",
     "heroIcon": "ti-beach",
-    "flag": "🇹🇭",
     "title": "Thailand",
     "destination": "Phuket · Bangkok · Pattaya",
     "subtitle": "Phuket → Bangkok → Pattaya",
@@ -132,11 +131,11 @@
     }
   ],
   "budget": [
-    { "cat": "Transport — all routes (for 2)", "thb": "~9,000", "note": "BKK→DMK Grab · HKT taxis · Pattaya round trip 1,750 · Bangkok Grab/taxis · airport transfers", "isTotal": false },
-    { "cat": "Entry fees & tours (for 2)",    "thb": "~11,000", "note": "Phi Phi Island tour 3,000 · Grand Palace 800 · Wat Arun 200 · Sanctuary of Truth 1,000 · Floating Market 400 · Phuket Fantasea 4,000 · misc 1,600", "isTotal": false },
-    { "cat": "Food — 6 days (for 2)",         "thb": "~9,000",  "note": "Street food + local restaurants ~THB 1,000/day for two + dinner cruise 3,000", "isTotal": false },
-    { "cat": "Accommodation — 5 nights (for 2)","thb": "~7,200","note": "Quip B&B 3 nights · QG Resort 2 nights", "isTotal": false },
-    { "cat": "Total estimate",                "thb": "~36,200", "note": "Excludes international flights. Add Alcazar show 1,600 + personal spending buffer ~THB 3,000–5,000.", "isTotal": true }
+    { "cat": "Transport — all routes (for 2)", "amount": "~9,000", "note": "BKK→DMK Grab · HKT taxis · Pattaya round trip 1,750 · Bangkok Grab/taxis · airport transfers", "isTotal": false },
+    { "cat": "Entry fees & tours (for 2)",    "amount": "~11,000", "note": "Phi Phi Island tour 3,000 · Grand Palace 800 · Wat Arun 200 · Sanctuary of Truth 1,000 · Floating Market 400 · Phuket Fantasea 4,000 · misc 1,600", "isTotal": false },
+    { "cat": "Food — 6 days (for 2)",         "amount": "~9,000",  "note": "Street food + local restaurants ~THB 1,000/day for two + dinner cruise 3,000", "isTotal": false },
+    { "cat": "Accommodation — 5 nights (for 2)","amount": "~7,200","note": "Quip B&B 3 nights · QG Resort 2 nights", "isTotal": false },
+    { "cat": "Total estimate",                "amount": "~36,200", "note": "Excludes international flights. Add Alcazar show 1,600 + personal spending buffer ~THB 3,000–5,000.", "isTotal": true }
   ],
   "notes": [
     { "title": "Currency",   "text": "1 USD ≈ THB 34 · 1 BDT ≈ THB 0.31 (approx, March 2025)" },
