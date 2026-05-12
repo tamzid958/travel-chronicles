@@ -31,9 +31,9 @@
     }
   },
   "hotels": [
-    { "name": "Hotel Casamara", "location": "Kandy",   "nights": 3, "dateRange": "24–27 May", "priceNote": "~LKR 3,000–4,000/night" },
-    { "name": "Zion View Ella", "location": "Ella",    "nights": 2, "dateRange": "27–29 May", "priceNote": "~LKR 3,000–4,000/night" },
-    { "name": "Clock Inn Colombo", "location": "Colombo", "nights": 2, "dateRange": "29–31 May", "priceNote": "~LKR 2,500–3,500/night" }
+    { "name": "Kandy City Village", "location": "Kandy",   "nights": 3, "dateRange": "24–27 May", "checkIn": "24 May 12:00", "checkOut": "27 May 10:00" },
+    { "name": "Ella Odyssey Inn",   "location": "Ella",    "nights": 2, "dateRange": "27–29 May", "checkIn": "27 May 15:00", "checkOut": "29 May 11:00" },
+    { "name": "Grand Oriental Hotel","location": "Colombo", "nights": 2, "dateRange": "29–31 May", "checkIn": "29 May 14:00", "checkOut": "31 May 12:00" }
   ],
   "route": [
     { "city": "CMB",          "via": null },
@@ -58,8 +58,8 @@
         { "t": "3:40 PM",  "tp": "flight",    "tx": "Land Colombo CMB. Clear immigration + bags. Out by ~4:30 PM." },
         { "t": "4:30 PM",  "tp": "transport", "tx": "Bus from outside arrivals → Pettah Central Bus Stand, Colombo. ~1 hr. LKR 150–200/person." },
         { "t": "5:30 PM",  "tp": "transport", "tx": "Bus: Pettah → Kandy Town. Every 20–30 min. ~3 hrs. LKR 200–250/person." },
-        { "t": "~8:30 PM", "tp": "transport", "ic": "ti-car", "tx": "Tuk-tuk: Kandy bus stand → Hotel Casamara. LKR 250–350. Let hotel know you are arriving late." },
-        { "t": "9:00 PM",  "tp": "sleep",     "tx": "Check in: Hotel Casamara, Kandy." },
+        { "t": "~8:30 PM", "tp": "transport", "ic": "ti-car", "tx": "Tuk-tuk: Kandy bus stand → Kandy City Village. LKR 250–350. Let hotel know you are arriving late." },
+        { "t": "9:00 PM",  "tp": "sleep",     "tx": "Check in: Kandy City Village, Kandy." },
         { "t": "9:30 PM",  "tp": "food",      "tx": "Kottu roti from a night stall nearby. LKR 400–600. Early rest." }
       ]
     },
@@ -93,13 +93,13 @@
     {
       "n": 4, "date": "Wed 27 May", "lbl": "Kandy → Nuwara Eliya → Ella",
       "acts": [
-        { "t": "7:00 AM",  "tp": "food",     "ic": "ti-coffee",  "tx": "Quick breakfast + check out." },
-        { "t": "8:00 AM",  "tp": "transport", "tx": "Bus: Kandy Goods Shed Bus Stand → Nuwara Eliya. ~2–2.5 hrs. LKR 250–350/person. Road climbs steadily through tea estates — genuinely beautiful." },
-        { "t": "10:30 AM", "tp": "activity", "ic": "ti-tree",    "tx": "Nuwara Eliya stopover (~2 hrs). Gregory Lake walk (free). Pedro or Mackwoods Tea Factory tour — LKR 500–700/person. Colonial hill station with cool mountain air." },
-        { "t": "12:30 PM", "tp": "food",     "tx": "Lunch in Nuwara Eliya town. LKR 400–600." },
-        { "t": "1:30 PM",  "tp": "transport", "tx": "Bus: Nuwara Eliya → Ella. ~2.5–3 hrs. LKR 250–350/person. Through Haputale — highland scenery the whole way." },
-        { "t": "~4:30 PM", "tp": "transport", "ic": "ti-map-pin", "tx": "Arrive Ella. Tuk-tuk to Zion View Ella. LKR 250–350." },
-        { "t": "5:00 PM",  "tp": "sleep",    "tx": "Check in: Zion View Ella. Panoramic valley views from the property." },
+        { "t": "8:00 AM",  "tp": "food",     "ic": "ti-coffee",  "tx": "Breakfast. Check out of Kandy City Village by 10:00 AM." },
+        { "t": "10:30 AM", "tp": "transport", "tx": "Bus: Kandy Goods Shed Bus Stand → Nuwara Eliya. ~2–2.5 hrs. LKR 250–350/person. Road climbs steadily through tea estates — genuinely beautiful." },
+        { "t": "1:00 PM",  "tp": "activity", "ic": "ti-tree",    "tx": "Nuwara Eliya stopover (~2 hrs). Gregory Lake walk (free). Pedro or Mackwoods Tea Factory tour — LKR 500–700/person. Colonial hill station with cool mountain air." },
+        { "t": "2:30 PM",  "tp": "food",     "tx": "Quick lunch in Nuwara Eliya town. LKR 400–600." },
+        { "t": "3:00 PM",  "tp": "transport", "tx": "Bus: Nuwara Eliya → Ella. ~2.5–3 hrs. LKR 250–350/person. Through Haputale — highland scenery the whole way." },
+        { "t": "~6:00 PM", "tp": "transport", "ic": "ti-map-pin", "tx": "Arrive Ella. Tuk-tuk to Ella Odyssey Inn. LKR 250–350." },
+        { "t": "6:30 PM",  "tp": "sleep",    "tx": "Check in: Ella Odyssey Inn. Check-in from 15:00." },
         { "t": "7:00 PM",  "tp": "food",     "tx": "Dinner on Ella main street. LKR 800–1,200." },
         { "t": "9:00 PM",  "tp": "night",    "tx": "Retro Bar or rooftop cafe. Small town, easy evening." }
       ]
@@ -119,11 +119,11 @@
     {
       "n": 6, "date": "Fri 29 May", "lbl": "Ella → Colombo",
       "acts": [
-        { "t": "7:30 AM",  "tp": "food",     "ic": "ti-coffee",      "tx": "Breakfast + check out by 8:00 AM." },
-        { "t": "8:00 AM",  "tp": "transport", "tx": "Bus: Ella → Wellawaya. ~35–45 min. LKR 60–100/person." },
-        { "t": "9:00 AM",  "tp": "transport", "tx": "Bus: Wellawaya → Colombo Pettah. ~5.5 hrs. LKR 350–450/person. Frequent departures throughout the morning." },
-        { "t": "~2:30 PM", "tp": "transport", "ic": "ti-map-pin",    "tx": "Arrive Colombo Pettah. Tuk-tuk to Clock Inn Colombo. LKR 300–450." },
-        { "t": "3:00 PM",  "tp": "sleep",    "tx": "Check in: Clock Inn Colombo." },
+        { "t": "9:00 AM",  "tp": "food",     "ic": "ti-coffee",      "tx": "Breakfast + check out of Ella Odyssey Inn by 11:00 AM." },
+        { "t": "11:00 AM", "tp": "transport", "tx": "Bus: Ella → Wellawaya. ~35–45 min. LKR 60–100/person." },
+        { "t": "12:00 PM", "tp": "transport", "tx": "Bus: Wellawaya → Colombo Pettah. ~5.5 hrs. LKR 350–450/person. Frequent departures throughout the morning." },
+        { "t": "~5:30 PM", "tp": "transport", "ic": "ti-map-pin",    "tx": "Arrive Colombo Pettah. Tuk-tuk to Grand Oriental Hotel. LKR 300–450." },
+        { "t": "6:00 PM",  "tp": "sleep",    "tx": "Check in: Grand Oriental Hotel. Check-in from 14:00." },
         { "t": "4:30 PM",  "tp": "activity", "ic": "ti-building",    "tx": "Colombo Fort walk — Dutch colonial buildings, Old Parliament, Lighthouse Clock Tower. Free." },
         { "t": "5:30 PM",  "tp": "activity", "ic": "ti-building",    "tx": "Jami Ul-Alfar Mosque (Red Mosque) — candy-striped Indo-Saracenic architecture. Free. Dress modestly." },
         { "t": "7:00 PM",  "tp": "activity", "ic": "ti-shopping-bag","tx": "Pettah Market evening — street food, street life." },
@@ -151,7 +151,7 @@
       "n": 8, "date": "Sun 31 May", "lbl": "Departure",
       "acts": [
         { "t": "4:30 AM", "tp": "sleep",    "ic": "ti-alarm", "tx": "Wake up." },
-        { "t": "5:00 AM", "tp": "transport","ic": "ti-car",   "tx": "Pre-booked taxi: Clock Inn Colombo → Bandaranaike Airport CMB. ~45 min. LKR 3,000–4,500. Book night before through hotel." },
+        { "t": "5:00 AM", "tp": "transport","ic": "ti-car",   "tx": "Pre-booked taxi: Grand Oriental Hotel → Bandaranaike Airport CMB. ~45 min. LKR 3,000–4,500. Book night before through hotel." },
         { "t": "5:45 AM", "tp": "activity", "ic": "ti-check", "tx": "Arrive CMB. Check-in + security. Terminal 1, SriLankan Airlines UL189." },
         { "t": "7:45 AM", "tp": "flight",   "tx": "Flight UL189 departs CMB." },
         { "t": "11:30 AM","tp": "flight",   "tx": "Land Dhaka DAC — Terminal 1, Hazrat Shahjalal International Airport." }
@@ -162,7 +162,7 @@
     { "cat": "Transport — all routes (for 2)", "lkr": "~14,000", "note": "Airport bus · Pettah→Kandy · Dambulla bus return · Sigiriya tuk-tuk · Kandy→NE→Ella buses · Ella→Wellawaya→Colombo · coastal train return · misc tuk-tuks · airport taxi", "isTotal": false },
     { "cat": "Entry fees (for 2)",             "lkr": "~22,000", "note": "Sigiriya SAARC ~$20×2 (12,800) · Temple of Tooth 4,000 · Pidurangala 2,000 · Kandyan Show 1,400 · Tea factory 1,400 · Ravana Falls 400", "isTotal": false },
     { "cat": "Food — 7 days (for 2)",          "lkr": "~17,500", "note": "Street food + local kades, 2026 prices, ~LKR 2,500/day for two", "isTotal": false },
-    { "cat": "Accommodation — 7 nights (for 2)","lkr": "~23,500","note": "Kandy 3×3,500 · Ella 2×3,500 · Colombo 2×3,000", "isTotal": false },
+    { "cat": "Accommodation — 7 nights (for 2)","lkr": "~23,500","note": "Kandy City Village 3 nights · Ella Odyssey Inn 2 nights · Grand Oriental Hotel 2 nights", "isTotal": false },
     { "cat": "Total estimate",                 "lkr": "~77,000", "note": "Excludes flights. Add personal spending + nightlife buffer ~LKR 5,000–10,000.", "isTotal": true }
   ],
   "notes": [
