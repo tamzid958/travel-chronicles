@@ -1,0 +1,142 @@
+{
+  "meta": {
+    "id": "nepal",
+    "accentColor": "#7c3aed",
+    "heroIcon": "ti-mountain",
+    "title": "Nepal",
+    "destination": "Kathmandu · Pokhara",
+    "subtitle": "Kathmandu → Pokhara → Kathmandu",
+    "tagline": "6 days · couple · adventure",
+    "tripType": "Adventure",
+    "durationDays": 6,
+    "startDate": "2024-12-25",
+    "endDate": "2024-12-30",
+    "dateLabel": "25–30 Dec 2024",
+    "travelers": 2,
+    "travelerLabel": "couple",
+    "highlights": ["Swayambhunath", "Sky Paragliding", "Phewa Lake"],
+    "budgetSummary": { "currency": "NPR", "total": "~125,000", "usdEquiv": "~$940", "note": "Includes flights, for 2" }
+  },
+  "flights": {
+    "outbound": {
+      "label": "Outbound",
+      "route": "DAC → KTM",
+      "detail": "Wed 25 Dec · 4:30 PM → 6:00 PM · BG373 · Biman Bangladesh Airlines · Boeing 737-800 · Economy-Y(B)"
+    },
+    "return": {
+      "label": "Return",
+      "route": "KTM → DAC",
+      "detail": "Mon 30 Dec · 12:35 PM → 2:15 PM · BG372 · Biman Bangladesh Airlines · Boeing 737-800 · Economy-Y(H)"
+    }
+  },
+  "hotels": [
+    { "name": "Flock Kathmandu",       "location": "Kathmandu", "nights": 2, "dateRange": "25–27 Dec", "checkIn": "25 Dec 1:00 PM",  "checkOut": "27 Dec 11:00 AM" },
+    { "name": "Hotel Middle Path & Spa","location": "Pokhara",   "nights": 2, "dateRange": "27–29 Dec", "checkIn": "27 Dec 12:00 PM", "checkOut": "29 Dec 12:00 PM" },
+    { "name": "Flock Kathmandu",       "location": "Kathmandu", "nights": 1, "dateRange": "29–30 Dec", "checkIn": "29 Dec 1:00 PM",  "checkOut": "30 Dec 11:00 AM" }
+  ],
+  "route": [
+    { "city": "DAC",        "via": null },
+    { "city": "Kathmandu",  "via": "flight" },
+    { "city": "Pokhara",    "via": "car" },
+    { "city": "Kathmandu",  "via": "car" },
+    { "city": "DAC",        "via": null }
+  ],
+  "exchangeRates": {
+    "USD_NPR": 133,
+    "BDT_NPR": 1.21,
+    "note": "1 USD ≈ NPR 133 · 1 BDT ≈ NPR 1.21 (approx, Dec 2024)"
+  },
+  "days": [
+    {
+      "n": 1, "date": "Wed 25 Dec", "lbl": "Arrive → Kathmandu",
+      "acts": [
+        { "t": "4:30 PM",  "tp": "flight",    "tx": "Depart Dhaka DAC Terminal 2 — BG373, Biman Bangladesh Airlines. Boeing 737-800. 1h 45m." },
+        { "t": "6:00 PM",  "tp": "flight",    "tx": "Arrive Tribhuvan International Airport (KTM), Terminal 1. Clear immigration + bags. Tourist visa on arrival: USD 30/person (15 days)." },
+        { "t": "7:00 PM",  "tp": "transport", "tx": "Taxi: KTM airport → Flock Kathmandu, Paknajol. ~20 min, NPR 700–900. Fixed-price prepaid taxis at the airport are safest." },
+        { "t": "7:30 PM",  "tp": "sleep",     "tx": "Check in: Flock Kathmandu, Paknajol (near Thamel). Check-in from 1:00 PM — late arrival fine." },
+        { "t": "8:30 PM",  "tp": "food",      "tx": "Christmas dinner in Thamel — 5-min walk from hotel. Rooftop restaurants: dal bhat, momo, or wood-fired pizza. NPR 500–800/person." },
+        { "t": "10:00 PM", "tp": "night",     "tx": "Thamel Christmas night — the backpacker district is alive with live music, fairy lights, and rooftop bars. Tom & Jerry's or the Purple Haze for live Nepali rock." }
+      ]
+    },
+    {
+      "n": 2, "date": "Thu 26 Dec", "lbl": "Kathmandu — Temples & Stupas",
+      "acts": [
+        { "t": "6:30 AM",  "tp": "activity",  "ic": "ti-building",    "tx": "Swayambhunath (Monkey Temple) — just 15 min walk from Flock Kathmandu. Climb 365 steps to the hilltop stupa for sunrise over the Kathmandu Valley. NPR 200/person. Hundreds of monkeys; all-seeing Buddha eyes on the spire." },
+        { "t": "8:30 AM",  "tp": "food",      "ic": "ti-coffee",      "tx": "Breakfast back in Thamel — Himalayan Java coffee or OR2K café. Eggs benedict, granola, fresh juice. NPR 400–600/person." },
+        { "t": "10:00 AM", "tp": "transport", "tx": "Taxi: Thamel → Pashupatinath Temple. ~15 min, NPR 300–400." },
+        { "t": "10:30 AM", "tp": "activity",  "ic": "ti-building",    "tx": "Pashupatinath Temple — the most sacred Hindu site in Nepal, on the banks of the Bagmati River. SAARC entry NPR 100/person. Ghats, sadhus in saffron robes, cremation rituals visible from across the river. Deeply moving." },
+        { "t": "12:00 PM", "tp": "activity",  "ic": "ti-building",    "tx": "Boudhanath Stupa — 10-min walk from Pashupatinath. One of the largest stupas in the world; UNESCO site. NPR 400/person. Tibetan monasteries surround it; prayer flags, butter-lamp offerings, monks circumambulating. ~1.5 hrs." },
+        { "t": "2:00 PM",  "tp": "food",      "tx": "Lunch at a Tibetan restaurant around Boudhanath — thukpa (noodle soup), shapta (stir-fried beef), butter tea. NPR 400–600/person." },
+        { "t": "3:30 PM",  "tp": "transport", "tx": "Taxi: Boudhanath → Kathmandu Durbar Square. ~20 min, NPR 400." },
+        { "t": "4:00 PM",  "tp": "activity",  "ic": "ti-building",    "tx": "Kathmandu Durbar Square — ancient royal palace complex with Kumari Ghar (living goddess), Taleju Temple, and Hanuman Dhoka. NPR 1,000/person (full heritage zone pass). ~1.5 hrs." },
+        { "t": "6:00 PM",  "tp": "activity",  "ic": "ti-shopping-bag","tx": "Thamel evening shopping — thangka paintings, pashmina shawls, prayer bowls, trekking gear. Good-natured bargaining expected." },
+        { "t": "8:00 PM",  "tp": "food",      "tx": "Dinner: Nepali thali at Thakali Kitchen or grilled buff momos at a local stall. NPR 400–700/person." }
+      ]
+    },
+    {
+      "n": 3, "date": "Fri 27 Dec", "lbl": "Kathmandu → Pokhara",
+      "acts": [
+        { "t": "7:30 AM",  "tp": "food",      "ic": "ti-coffee",      "tx": "Early breakfast at hotel. Check out of Flock Kathmandu by 11:00 AM." },
+        { "t": "9:00 AM",  "tp": "transport", "ic": "ti-car",          "tx": "Private car: Kathmandu → Pokhara via Prithvi Highway. ~200 km, 6–7 hrs. The road winds through river gorges (Trishuli), terraced hillsides, and mountain valleys — a scenic drive in itself. NPR 12,000–15,000 total (one way)." },
+        { "t": "10:30 AM", "tp": "food",      "tx": "Roadside stop at Mugling or Abu Khaireni — famous for fresh fish curry and chicken. NPR 300–500/person." },
+        { "t": "3:30 PM",  "tp": "sleep",     "tx": "Arrive Pokhara. Check in: Hotel Middle Path & Spa, Lakeside. Check-in from 12:00 PM." },
+        { "t": "5:00 PM",  "tp": "activity",  "ic": "ti-ripple",       "tx": "Phewa Lake waterfront — stroll the Lakeside promenade as the Annapurna range turns golden at dusk. Free. Rent a rowboat: NPR 400–600/hour." },
+        { "t": "7:30 PM",  "tp": "food",      "tx": "Dinner at Lakeside — Moondance Restaurant or Busy Bee Café. Steaks, pasta, Nepali BBQ. NPR 600–900/person." }
+      ]
+    },
+    {
+      "n": 4, "date": "Sat 28 Dec", "lbl": "Pokhara — Paragliding & Lake",
+      "acts": [
+        { "t": "5:30 AM",  "tp": "transport", "tx": "Taxi: hotel → Sarangkot Hill. ~20 min, NPR 500. Arrive before sunrise." },
+        { "t": "6:00 AM",  "tp": "activity",  "ic": "ti-sunrise",      "tx": "Sarangkot Sunrise — watch the sun rise behind Machhapuchhre (Fish Tail), Annapurna I, II, and IV turn pink above the clouds. One of the finest Himalayan panoramas in Nepal. NPR 100/person." },
+        { "t": "8:00 AM",  "tp": "activity",  "ic": "ti-wind",         "tx": "Sky Paragliding from Sarangkot — 30-min tandem glide from 1,600 m over Phewa Lake and the Pokhara Valley with the Annapurna range as the backdrop. NPR 8,000–9,000/person. GoPro video package available. Best thermals in the morning." },
+        { "t": "9:30 AM",  "tp": "transport", "tx": "Transfer back to Lakeside after landing (paragliding ends near Phewa Lake shore). NPR 200." },
+        { "t": "10:00 AM", "tp": "food",      "ic": "ti-coffee",       "tx": "Celebratory brunch at a Lakeside café. Pancakes, eggs, fresh lassi. NPR 400–600/person." },
+        { "t": "12:00 PM", "tp": "activity",  "ic": "ti-ripple",       "tx": "Phewa Lake boating — rowboat to Tal Barahi Temple (island shrine in the middle of the lake). NPR 600/hour. Crystal clear reflections of the Annapurna range on calm mornings." },
+        { "t": "2:00 PM",  "tp": "activity",  "ic": "ti-ripple",       "tx": "Davis Falls (Patale Chhango) — the Pardi Khola river disappears underground in a dramatic cascade. NPR 50/person. Adjacent Gupteshwor Mahadev Cave: NPR 100/person — stalactites and a Shiva shrine." },
+        { "t": "4:00 PM",  "tp": "activity",  "ic": "ti-building",     "tx": "World Peace Pagoda — white Japanese stupa on a hilltop above the southern shore of Phewa Lake. Free (NPR 100 boat across lake + 30-min hike). 360° views: lake below, Himalayas above." },
+        { "t": "7:00 PM",  "tp": "food",      "tx": "Dinner at Lakeside — fresh Phewa trout with garlic butter, a Pokhara speciality. NPR 700–1,000/person." },
+        { "t": "9:00 PM",  "tp": "night",     "tx": "Lakeside bars — Club Amsterdam, Busy Bee. Live Nepali folk music in the evenings." }
+      ]
+    },
+    {
+      "n": 5, "date": "Sun 29 Dec", "lbl": "Pokhara → Kathmandu",
+      "acts": [
+        { "t": "8:00 AM",  "tp": "activity",  "ic": "ti-ripple",       "tx": "Last morning on Phewa Lake — early row on the glassy water before the tourist crowds. Optional: Begnas Lake (30 min away, quieter). NPR 400/hour rowboat." },
+        { "t": "10:30 AM", "tp": "food",      "ic": "ti-coffee",       "tx": "Final Pokhara breakfast + check out of Hotel Middle Path & Spa by 12:00 PM." },
+        { "t": "12:00 PM", "tp": "transport", "ic": "ti-car",          "tx": "Private car: Pokhara → Kathmandu. ~7 hrs return via Prithvi Highway. NPR 12,000–15,000." },
+        { "t": "3:00 PM",  "tp": "food",      "tx": "Lunch stop at Mugling — riverside dhabas. Dal bhat or mutton curry. NPR 300–500/person." },
+        { "t": "7:00 PM",  "tp": "sleep",     "tx": "Arrive Kathmandu. Check in: Flock Kathmandu, Paknajol. Check-in from 1:00 PM." },
+        { "t": "8:00 PM",  "tp": "food",      "tx": "Last dinner in Thamel — Fire & Ice Pizzeria (Kathmandu's best pizza) or a farewell Nepali thali. NPR 500–800/person." },
+        { "t": "9:30 PM",  "tp": "activity",  "ic": "ti-shopping-bag", "tx": "Final Thamel shopping — last-minute pashminas, spices, and thankas for gifts. Pack tonight." }
+      ]
+    },
+    {
+      "n": 6, "date": "Mon 30 Dec", "lbl": "Departure",
+      "acts": [
+        { "t": "8:00 AM",  "tp": "food",      "ic": "ti-coffee",      "tx": "Quick breakfast at hotel. Check out of Flock Kathmandu by 11:00 AM." },
+        { "t": "10:00 AM", "tp": "transport", "tx": "Taxi: Flock Kathmandu → Tribhuvan International Airport (KTM). ~20 min, NPR 700–900." },
+        { "t": "10:30 AM", "tp": "activity",  "ic": "ti-check",       "tx": "Arrive KTM airport, Terminal 1. Check-in + immigration + security. Biman BG372." },
+        { "t": "12:35 PM", "tp": "flight",    "tx": "Flight BG372 departs KTM — Biman Bangladesh Airlines. Boeing 737-800. 1h 25m." },
+        { "t": "2:15 PM",  "tp": "flight",    "tx": "Land Dhaka DAC Terminal 2 — Hazrat Shahjalal International Airport." }
+      ]
+    }
+  ],
+  "budget": [
+    { "cat": "Flights — round trip (for 2)",          "amount": "~48,000", "note": "DAC↔KTM BG373+BG372, Biman Bangladesh Airlines, for 2 passengers", "isTotal": false },
+    { "cat": "Accommodation — 5 nights (for 2)",      "amount": "~15,000", "note": "Flock Kathmandu 3 nts + Hotel Middle Path & Spa 2 nts", "isTotal": false },
+    { "cat": "Private car KTM↔Pokhara (return)",      "amount": "~28,000", "note": "~NPR 14,000 each way via Prithvi Highway. Includes driver and fuel.", "isTotal": false },
+    { "cat": "Sky Paragliding (for 2)",               "amount": "~17,000", "note": "30-min tandem flight from Sarangkot ~NPR 8,500/person. GoPro extra.", "isTotal": false },
+    { "cat": "Entry fees (for 2)",                    "amount": "~6,700",  "note": "Visa 30 USD×2=7,980 · Swayambhunath 400 · Pashupatinath 200 · Boudhanath 800 · Durbar Square 2,000 · Sarangkot 200 · Davis Falls+Cave 300 · Peace Pagoda boat 200", "isTotal": false },
+    { "cat": "Food — 6 days (for 2)",                 "amount": "~8,000",  "note": "Street momos + local thalis + Lakeside restaurants ~NPR 650/day for two", "isTotal": false },
+    { "cat": "Transport within cities (for 2)",       "amount": "~2,500",  "note": "Airport taxis × 2 + Kathmandu city taxis + Pokhara tuk-tuks and boats", "isTotal": false },
+    { "cat": "Total estimate",                        "amount": "~125,200","note": "Includes flights, visa, paragliding. Excludes shopping.", "isTotal": true }
+  ],
+  "notes": [
+    { "title": "Visa",        "text": "Tourist visa on arrival at KTM airport: USD 30 for 15 days. Bring USD cash or card. Queues can be long — fill in the online form at immigration.gov.np before travel to save time." },
+    { "title": "Currency",    "text": "1 USD ≈ NPR 133 · 1 BDT ≈ NPR 1.21 (approx, Dec 2024). Indian Rupee (INR) is widely accepted at 1.6 NPR. ATMs in Thamel and Lakeside Pokhara dispense NPR. Carry cash for temples and street food." },
+    { "title": "Paragliding", "text": "Book with certified operators in Lakeside Pokhara (Blue Sky, Sunrise, or Avia Club). Minimum age 5; no upper weight limit in most cases. Morning flights (8–11 AM) give the clearest Himalayan views before afternoon clouds build." },
+    { "title": "Road Trip",   "text": "KTM↔Pokhara via Prithvi Highway takes 6–7 hrs by private car. A scenic but winding mountain road — avoid night driving. Mugling and Abu Khaireni are popular midway food stops." },
+    { "title": "Dress Code",  "text": "Remove footwear at all temple sites. At Pashupatinath, non-Hindus are restricted to the eastern bank. Dress modestly — cover shoulders and knees. Light layers for December; Pokhara mornings can be cold (8–12°C)." }
+  ]
+}
