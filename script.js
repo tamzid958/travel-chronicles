@@ -56,6 +56,7 @@ async function initIndex() {
   try {
     const files = await fetchJSON('data/tours.json');
     const tours = await Promise.all(files.map(f => fetchJSON('data/' + f)));
+    tours.sort((a, b) => new Date(b.meta.startDate) - new Date(a.meta.startDate));
     renderStats(tours);
     renderCards(tours);
   } catch (e) {
