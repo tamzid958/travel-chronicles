@@ -65,20 +65,21 @@
         { "t": "Afternoon","tp": "flight",    "tx": "Arrive Kuala Lumpur International Airport (KUL). Clear immigration + bags." },
         { "t": "~3:00 PM", "tp": "transport", "tx": "Grab to Kingston Hotel 6 @ Changkat Bukit Bintang. ~45 min from KUL, MYR 50–70." },
         { "t": "~4:00 PM", "tp": "sleep",     "tx": "Check in: Kingston Hotel 6 @ Changkat Bukit Bintang, KL." },
-        { "t": "4:30 PM",  "tp": "activity",  "ic": "ti-building", "tx": "Batu Caves — iconic Hindu temple complex carved into limestone. Free entry to main cave. 272 steps. ~1.5 hrs. Train from KL Sentral, MYR 2.60/person." },
-        { "t": "7:00 PM",  "tp": "activity",  "ic": "ti-building", "tx": "Museum of Illusions Kuala Lumpur — interactive optical illusion galleries. KL city centre." },
-        { "t": "8:30 PM",  "tp": "food",      "tx": "Dinner at Damascus Bukit Bintang — Middle Eastern flavors a short walk from hotel. MYR 130 (for 2)." },
-        { "t": "10:00 PM", "tp": "night",     "tx": "Explore Changkat Bukit Bintang — the hotel's street is KL's main bar and dining strip. Rooftop bars, live music." }
+        { "t": "4:30 PM",  "tp": "activity",  "ic": "ti-building", "tx": "Batu Caves — iconic Hindu temple complex carved into limestone. Free entry to main cave. 272 rainbow-painted steps. ~1.5 hrs. Train from KL Sentral, MYR 2.60/person." },
+        { "t": "6:30 PM",  "tp": "activity",  "ic": "ti-trees",    "tx": "KLCC Park — 50-acre park at the foot of the Petronas Twin Towers. Lake, jogging path, fountains, and the twin towers lit up at dusk. MYR 30 (for 2)." },
+        { "t": "7:30 PM",  "tp": "activity",  "ic": "ti-building", "tx": "Museum of Illusions Kuala Lumpur — interactive optical illusion galleries, Vortex Tunnel, Ames Room. MYR 49/person." },
+        { "t": "9:00 PM",  "tp": "food",      "tx": "Dinner at Damascus Bukit Bintang — Middle Eastern flavors a short walk from hotel. MYR 130 (for 2)." },
+        { "t": "10:30 PM", "tp": "night",     "tx": "Explore Changkat Bukit Bintang — the hotel's street is KL's main bar and dining strip. Rooftop bars, live music." }
       ]
     },
     {
       "n": 2, "date": "Wed 24 Dec", "lbl": "Genting Highlands",
       "acts": [
-        { "t": "8:00 AM",  "tp": "food",      "ic": "ti-coffee",      "tx": "Breakfast near hotel before heading out." },
+        { "t": "8:00 AM",  "tp": "food",      "ic": "ti-coffee",      "tx": "Breakfast near hotel before heading out. MYR 10–15/person." },
         { "t": "9:00 AM",  "tp": "transport", "tx": "Bus: KL Sentral → Genting Awana Bus Terminal. MYR 22.60/person. ~1 hr. Buy tickets at KL Sentral bus counter." },
-        { "t": "10:00 AM", "tp": "activity",  "ic": "ti-mountain",    "tx": "Awana SkyWay — 3.4 km gondola up to SkyAvenue. Sweeping highland views. Ticket from gondola station." },
-        { "t": "11:00 AM", "tp": "activity",  "ic": "ti-shopping-bag","tx": "Genting Highlands Premium Outlets — luxury and mid-range brands at outlet prices. Cool highland air." },
-        { "t": "2:00 PM",  "tp": "activity",  "ic": "ti-building",    "tx": "SkyAvenue — indoor entertainment complex: arcade games, theme rides, dining, cinema. At the summit." },
+        { "t": "10:00 AM", "tp": "activity",  "ic": "ti-mountain",    "tx": "Awana SkyWay — 3.4 km gondola up to SkyAvenue. MYR 22/person return. Sweeping highland views over the rainforest canopy." },
+        { "t": "11:00 AM", "tp": "activity",  "ic": "ti-shopping-bag","tx": "Genting Highlands Premium Outlets — luxury and mid-range brands at outlet prices. Free entry. Cool 1,800 m highland air." },
+        { "t": "2:00 PM",  "tp": "activity",  "ic": "ti-building",    "tx": "SkyAvenue — indoor entertainment hub at the summit: arcade games, theme rides, dining, cinema. Free entry; pay per ride/activity." },
         { "t": "5:00 PM",  "tp": "transport", "tx": "Return bus: Genting Awana → KL Sentral. MYR 22.60/person." },
         { "t": "7:30 PM",  "tp": "food",      "ic": "ti-fish",        "tx": "Dinner at Jalan Alor Food Street — KL's most famous outdoor hawker street. Char kway teow, satay, seafood. MYR 50–100/person." }
       ]
@@ -105,10 +106,10 @@
         { "t": "12:00 PM", "tp": "sleep",     "tx": "Arrive Tanah Rata. Check in: Melur Inn Hotel, Cameron Highlands." },
         { "t": "1:00 PM",  "tp": "food",      "tx": "Lunch in Tanah Rata town. Steam boat or roti canai. MYR 15–30/person." },
         { "t": "2:30 PM",  "tp": "activity",  "ic": "ti-leaf",     "tx": "BOH Tea Centre, Sungei Palas Garden — iconic hilltop tea plantation. Free. Overlooking endless rows of tea bushes. Tea and scones at the café." },
-        { "t": "4:30 PM",  "tp": "activity",  "ic": "ti-butterfly","tx": "Cameron Highlands Butterfly Farm — tropical species in a walk-through garden. Small entry fee." },
+        { "t": "4:30 PM",  "tp": "activity",  "ic": "ti-butterfly","tx": "Cameron Highlands Butterfly Farm — tropical species in a walk-through garden. MYR 8/person." },
         { "t": "5:30 PM",  "tp": "activity",  "ic": "ti-building", "tx": "Sam Poh Temple — ornate Chinese Buddhist temple on a hilltop above Brinchang. Free. Sweeping highland panorama." },
         { "t": "6:30 PM",  "tp": "activity",  "ic": "ti-plant-2",  "tx": "Strawberry Farm — pick your own strawberries. MYR 10–15/person. Local strawberry jam, cream, and ice cream available." },
-        { "t": "8:00 PM",  "tp": "food",      "tx": "Dinner in Tanah Rata. Steamboat hotpot — perfect for the cool highland air." }
+        { "t": "8:00 PM",  "tp": "food",      "tx": "Dinner in Tanah Rata. Steamboat hotpot — perfect for the cool highland air. MYR 25–40/person." }
       ]
     },
     {
