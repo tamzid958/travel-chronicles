@@ -109,7 +109,7 @@ function cardHTML(t) {
     .filter(Boolean).map(chipHTML).join('');
 
   return `
-<a href="tour.html?tour=${id}.json" class="card" style="text-decoration:none">
+<a href="tour.html#${id}" class="card" style="text-decoration:none">
   <div class="card-image-wrap">
     <div class="card-image-placeholder">${m.flag || '✈️'}</div>
     <div class="card-accent" style="background:${accent}"></div>
@@ -142,7 +142,7 @@ function cardHTML(t) {
 
 /* ── TOUR PAGE ─────────────────────────────────────────────── */
 async function initTour() {
-  const param = new URLSearchParams(location.search).get('tour');
+  const param = location.hash.slice(1);
   if (!param) { showTourError('No tour specified.'); return; }
 
   const file = param.endsWith('.json') ? param : param + '.json';
