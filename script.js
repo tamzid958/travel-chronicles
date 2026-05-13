@@ -234,9 +234,7 @@ function renderRoute(route, hotels) {
     let transport = '';
     if (!isLast && !isAirport) {
       const nextVia = route[i + 1].via || '';
-      if (nextVia === 'train')  transport = 'Train';
-      else if (nextVia === 'car') transport = 'Car';
-      else                     transport = 'Bus';
+      if (nextVia) transport = nextVia.charAt(0).toUpperCase() + nextVia.slice(1);
     }
 
     rows.push(`<tr class="rs-row rs-type-${type}">
