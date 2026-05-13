@@ -32,7 +32,12 @@
       {
         "label": "Penang → Langkawi",
         "route": "PEN → LGK",
-        "detail": "Mon 29 Dec · FY4672 · Firefly"
+        "detail": "Mon 29 Dec · FY4672 · Firefly (round-trip outbound)"
+      },
+      {
+        "label": "Langkawi → Kuala Lumpur",
+        "route": "LGK → KUL",
+        "detail": "Thu 1 Jan · Firefly (round-trip return)"
       }
     ]
   },
@@ -176,16 +181,16 @@
     {
       "n": 10, "date": "Thu 1 Jan", "lbl": "Departure",
       "acts": [
-        { "t": "Early AM", "tp": "transport", "tx": "Check out of Destini Akef Villa. Transfer to Langkawi Airport (LGK) for connecting flight to KUL." },
-        { "t": "Morning",  "tp": "flight",    "tx": "Flight: Langkawi LGK → Kuala Lumpur KUL (AirAsia or Firefly, ~1 hr). Book separately to connect to return flight." },
-        { "t": "~11:00 AM","tp": "activity",  "ic": "ti-check",    "tx": "Arrive KUL. Check-in + security. Batik Air OD166, Terminal 2." },
+        { "t": "Early AM", "tp": "transport", "tx": "Check out of Destini Akef Villa. Transfer to Langkawi Airport (LGK)." },
+        { "t": "Morning",  "tp": "flight",    "tx": "Flight Firefly: LGK → KUL (round-trip return leg). ~1 hr." },
+        { "t": "~11:00 AM","tp": "activity",  "ic": "ti-check",    "tx": "Arrive Kuala Lumpur. Transfer to KLIA if needed. Check-in + security for Batik Air OD166." },
         { "t": "Afternoon","tp": "flight",    "tx": "Flight OD166, Batik Air Malaysia: KUL → Dhaka DAC. MYR 2,077/person." },
         { "t": "Evening",  "tp": "flight",    "tx": "Land Dhaka DAC — Hazrat Shahjalal International Airport." }
       ]
     }
   ],
   "budget": [
-    { "cat": "Flights — all 3 (for 2)",           "amount": "~4,518", "note": "DAC→KUL BS315 MYR 2,055 · PEN→LGK FY4672 MYR 386 · KUL→DAC OD166 MYR 2,077", "isTotal": false },
+    { "cat": "Flights — all round trips (for 2)", "amount": "~4,518", "note": "DAC↔KUL BS315+OD166 MYR 4,132 · PEN↔LGK↔KUL Firefly round trip MYR 386", "isTotal": false },
     { "cat": "Accommodation — 9 nights (for 2)",   "amount": "~1,233", "note": "Kingston Hotel 6 MYR 307 (3 nts) · Melur Inn MYR 197 (1 nt) · Rare Heritage House MYR 313 (2 nts) · Destini Akef Villa MYR 416 (3 nts)", "isTotal": false },
     { "cat": "Transport — buses & car rental",      "amount": "~557",   "note": "KL↔Genting 45.2 · TBS↔Melaka 69.6 · TBS→Cameron 111.88 · Tanah Rata→Penang 90.4 · Car rental Langkawi 240", "isTotal": false },
     { "cat": "Food & activities (estimated, for 2)","amount": "~2,952", "note": "Damascus 130 · KLCC Park 30 · hawker meals + entry fees + tours + Langkawi activities over 10 days", "isTotal": false },
@@ -194,7 +199,7 @@
   "notes": [
     { "title": "Currency",   "text": "1 USD ≈ MYR 4.45 · 1 BDT ≈ MYR 0.037 (approx, Dec 2025). Langkawi is duty-free — alcohol, chocolates, and cosmetics are significantly cheaper." },
     { "title": "Transport",  "text": "Use Grab for city rides in KL and Penang. Car rental is essential in Langkawi — public transport is limited. Book buses from TBS (Terminal Bersepadu Selatan) via Easybook or at the counter." },
-    { "title": "Airports",   "text": "Jan 1 departure is from Kuala Lumpur KUL (not Langkawi). Book a Langkawi→KUL connecting flight separately and allow at least 3 hrs before the KUL→DAC departure." },
+    { "title": "Airports",   "text": "Jan 1: Firefly round-trip return (LGK→KUL) connects to Batik Air OD166 (KUL→DAC). Allow enough layover time between the Firefly arrival and the Batik Air departure." },
     { "title": "Dress Code", "text": "Cover shoulders and knees at Sam Poh Temple, Kek Lok Si, and Batu Caves. Modest dress appreciated at all religious sites." },
     { "title": "Cash",       "text": "Carry MYR cash for hawker centres, temples, and rural stops. ATMs widely available in KL, Penang, and Langkawi town. Grab requires a card linked to the app." }
   ]
