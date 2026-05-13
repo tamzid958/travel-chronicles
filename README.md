@@ -37,9 +37,3 @@ npx serve .
 # or
 python3 -m http.server
 ```
-
-## Current Trips
-
-| Destination | Dates | Duration | Travelers |
-|---|---|---|---|
-| Sri Lanka (Kandy · Ella · Colombo) | 24–31 May 2026 | 8 days | Couple |
