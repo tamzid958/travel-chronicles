@@ -1,0 +1,201 @@
+{
+  "meta": {
+    "id": "malaysia",
+    "accentColor": "#dc2626",
+    "heroIcon": "ti-building-mosque",
+    "title": "Malaysia",
+    "destination": "Kuala Lumpur · Cameron Highlands · Penang · Langkawi",
+    "subtitle": "KL → Cameron Highlands → Penang → Langkawi",
+    "tagline": "10 days · couple · leisure",
+    "tripType": "Leisure",
+    "durationDays": 10,
+    "startDate": "2025-12-23",
+    "endDate": "2026-01-01",
+    "dateLabel": "23 Dec 2025 – 1 Jan 2026",
+    "travelers": 2,
+    "travelerLabel": "couple",
+    "highlights": ["Batu Caves", "Penang Heritage", "Langkawi Island"],
+    "budgetSummary": { "currency": "MYR", "total": "~9,260", "usdEquiv": "~$2,080", "note": "Includes all flights, for 2" }
+  },
+  "flights": {
+    "outbound": {
+      "label": "Outbound",
+      "route": "DAC → KUL",
+      "detail": "Tue 23 Dec · BS315 · US-Bangla Airlines"
+    },
+    "return": {
+      "label": "Return",
+      "route": "KUL → DAC",
+      "detail": "Thu 1 Jan · OD166 · Batik Air Malaysia"
+    },
+    "internal": [
+      {
+        "label": "Penang → Langkawi",
+        "route": "PEN → LGK",
+        "detail": "Mon 29 Dec · FY4672 · Firefly"
+      }
+    ]
+  },
+  "hotels": [
+    { "name": "Kingston Hotel 6 @ Changkat Bukit Bintang", "location": "Kuala Lumpur",    "nights": 3, "dateRange": "23–26 Dec", "totalMYR": 307, "perNightMYR": 102 },
+    { "name": "Melur Inn Hotel",                           "location": "Cameron Highlands","nights": 1, "dateRange": "26–27 Dec", "totalMYR": 197, "perNightMYR": 197 },
+    { "name": "Rare Heritage House",                       "location": "Penang",           "nights": 2, "dateRange": "27–29 Dec", "totalMYR": 313, "perNightMYR": 157 },
+    { "name": "Destini Akef Villa",                        "location": "Langkawi",         "nights": 3, "dateRange": "29–31 Dec", "totalMYR": 416, "perNightMYR": 139 }
+  ],
+  "route": [
+    { "city": "DAC",               "via": null },
+    { "city": "Kuala Lumpur",      "via": "flight" },
+    { "city": "Genting Highlands", "via": "bus",    "stopType": "daytrip" },
+    { "city": "Melaka",            "via": "bus",    "stopType": "daytrip" },
+    { "city": "Cameron Highlands", "via": "bus" },
+    { "city": "Penang",            "via": "bus" },
+    { "city": "Langkawi",          "via": "flight" },
+    { "city": "DAC",               "via": null }
+  ],
+  "exchangeRates": {
+    "USD_MYR": 4.45,
+    "BDT_MYR": 0.037,
+    "note": "1 USD ≈ MYR 4.45 · 1 BDT ≈ MYR 0.037 (approx, Dec 2025)"
+  },
+  "days": [
+    {
+      "n": 1, "date": "Tue 23 Dec", "lbl": "Arrive → Kuala Lumpur",
+      "acts": [
+        { "t": "Morning",  "tp": "flight",    "tx": "Depart Dhaka DAC — BS315, US-Bangla Airlines. MYR 2,055/person." },
+        { "t": "Afternoon","tp": "flight",    "tx": "Arrive Kuala Lumpur International Airport (KUL). Clear immigration + bags." },
+        { "t": "~3:00 PM", "tp": "transport", "tx": "Grab to Kingston Hotel 6 @ Changkat Bukit Bintang. ~45 min from KUL, MYR 50–70." },
+        { "t": "~4:00 PM", "tp": "sleep",     "tx": "Check in: Kingston Hotel 6 @ Changkat Bukit Bintang, KL." },
+        { "t": "4:30 PM",  "tp": "activity",  "ic": "ti-building", "tx": "Batu Caves — iconic Hindu temple complex carved into limestone. Free entry to main cave. 272 rainbow-painted steps. ~1.5 hrs. Train from KL Sentral, MYR 2.60/person." },
+        { "t": "6:30 PM",  "tp": "activity",  "ic": "ti-trees",    "tx": "KLCC Park — 50-acre park at the foot of the Petronas Twin Towers. Lake, jogging path, fountains, and the twin towers lit up at dusk. MYR 30 (for 2)." },
+        { "t": "7:30 PM",  "tp": "activity",  "ic": "ti-building", "tx": "Museum of Illusions Kuala Lumpur — interactive optical illusion galleries, Vortex Tunnel, Ames Room. MYR 49/person." },
+        { "t": "9:00 PM",  "tp": "food",      "tx": "Dinner at Damascus Bukit Bintang — Middle Eastern flavors a short walk from hotel. MYR 130 (for 2)." },
+        { "t": "10:30 PM", "tp": "night",     "tx": "Explore Changkat Bukit Bintang — the hotel's street is KL's main bar and dining strip. Rooftop bars, live music." }
+      ]
+    },
+    {
+      "n": 2, "date": "Wed 24 Dec", "lbl": "Genting Highlands",
+      "acts": [
+        { "t": "8:00 AM",  "tp": "food",      "ic": "ti-coffee",      "tx": "Breakfast near hotel before heading out. MYR 10–15/person." },
+        { "t": "9:00 AM",  "tp": "transport", "tx": "Bus: KL Sentral → Genting Awana Bus Terminal. MYR 22.60/person. ~1 hr. Buy tickets at KL Sentral bus counter." },
+        { "t": "10:00 AM", "tp": "activity",  "ic": "ti-mountain",    "tx": "Awana SkyWay — 3.4 km gondola up to SkyAvenue. MYR 22/person return. Sweeping highland views over the rainforest canopy." },
+        { "t": "11:00 AM", "tp": "activity",  "ic": "ti-shopping-bag","tx": "Genting Highlands Premium Outlets — luxury and mid-range brands at outlet prices. Free entry. Cool 1,800 m highland air." },
+        { "t": "2:00 PM",  "tp": "activity",  "ic": "ti-building",    "tx": "SkyAvenue — indoor entertainment hub at the summit: arcade games, theme rides, dining, cinema. Free entry; pay per ride/activity." },
+        { "t": "5:00 PM",  "tp": "transport", "tx": "Return bus: Genting Awana → KL Sentral. MYR 22.60/person." },
+        { "t": "7:30 PM",  "tp": "food",      "ic": "ti-fish",        "tx": "Dinner at Jalan Alor Food Street — KL's most famous outdoor hawker street. Char kway teow, satay, seafood. MYR 50–100/person." }
+      ]
+    },
+    {
+      "n": 3, "date": "Thu 25 Dec", "lbl": "Melaka Day Trip",
+      "acts": [
+        { "t": "8:00 AM",  "tp": "food",      "ic": "ti-coffee",   "tx": "Early breakfast. Head to Terminal Bersepadu Selatan (TBS) — 20 min by Grab from hotel." },
+        { "t": "9:00 AM",  "tp": "transport", "tx": "Bus: TBS → Melaka Sentral. MYR 34.80/person. ~2 hrs. Frequent departures." },
+        { "t": "11:00 AM", "tp": "activity",  "ic": "ti-building", "tx": "Dutch Square (Red Square) — Stadthuys, Christ Church, and Fountain Square. Iconic red colonial architecture. Free." },
+        { "t": "12:00 PM", "tp": "activity",  "ic": "ti-building", "tx": "St Paul's Hill + Church of Saint Paul — ruined 16th-century Portuguese church with city views. Free." },
+        { "t": "1:00 PM",  "tp": "food",      "tx": "Lunch in Melaka — chicken rice balls, Nyonya cuisine. MYR 20–40/person." },
+        { "t": "2:00 PM",  "tp": "activity",  "ic": "ti-building", "tx": "A Famosa — Portuguese fort remnant from 1511. Historic gateway. Free." },
+        { "t": "2:30 PM",  "tp": "activity",  "ic": "ti-building", "tx": "Muzium Istana Kesultanan Melaka — Royal Palace Museum. MYR 2/person. Traditional Malay royal artifacts." },
+        { "t": "4:30 PM",  "tp": "transport", "tx": "Return bus: Melaka Sentral → TBS. MYR 34.80/person. ~2 hrs." },
+        { "t": "7:30 PM",  "tp": "night",     "tx": "Back in KL. Drinks and dinner on Changkat Bukit Bintang — rooftop bars, outdoor terrace restaurants, lively Christmas night crowd." }
+      ]
+    },
+    {
+      "n": 4, "date": "Fri 26 Dec", "lbl": "KL → Cameron Highlands",
+      "acts": [
+        { "t": "7:00 AM",  "tp": "food",      "ic": "ti-coffee",   "tx": "Early breakfast + check out of Kingston Hotel 6." },
+        { "t": "8:00 AM",  "tp": "transport", "tx": "Bus: TBS → Tanah Rata, Cameron Highlands. MYR 111.88/person (for 2). ~4 hrs through winding highland roads." },
+        { "t": "12:00 PM", "tp": "sleep",     "tx": "Arrive Tanah Rata. Check in: Melur Inn Hotel, Cameron Highlands." },
+        { "t": "1:00 PM",  "tp": "food",      "tx": "Lunch in Tanah Rata town. Steam boat or roti canai. MYR 15–30/person." },
+        { "t": "2:30 PM",  "tp": "activity",  "ic": "ti-leaf",     "tx": "BOH Tea Centre, Sungei Palas Garden — iconic hilltop tea plantation. Free. Overlooking endless rows of tea bushes. Tea and scones at the café." },
+        { "t": "4:30 PM",  "tp": "activity",  "ic": "ti-butterfly","tx": "Cameron Highlands Butterfly Farm — tropical species in a walk-through garden. MYR 8/person." },
+        { "t": "5:30 PM",  "tp": "activity",  "ic": "ti-building", "tx": "Sam Poh Temple — ornate Chinese Buddhist temple on a hilltop above Brinchang. Free. Sweeping highland panorama." },
+        { "t": "6:30 PM",  "tp": "activity",  "ic": "ti-plant-2",  "tx": "Strawberry Farm — pick your own strawberries. MYR 10–15/person. Local strawberry jam, cream, and ice cream available." },
+        { "t": "8:00 PM",  "tp": "food",      "tx": "Dinner in Tanah Rata. Steamboat hotpot — perfect for the cool highland air. MYR 25–40/person." }
+      ]
+    },
+    {
+      "n": 5, "date": "Sat 27 Dec", "lbl": "Cameron → Penang",
+      "acts": [
+        { "t": "8:00 AM",  "tp": "food",      "ic": "ti-coffee",      "tx": "Breakfast + check out of Melur Inn Hotel." },
+        { "t": "9:00 AM",  "tp": "transport", "tx": "Bus: Tanah Rata → Terminal Bas Sungai Nibong, Penang. MYR 90.40/person. ~3.5 hrs through lush jungle and coastal lowlands." },
+        { "t": "12:30 PM", "tp": "transport", "ic": "ti-car",          "tx": "Grab from Sungai Nibong to Rare Heritage House, George Town. ~20 mins." },
+        { "t": "1:00 PM",  "tp": "sleep",     "tx": "Check in: Rare Heritage House, Penang." },
+        { "t": "2:00 PM",  "tp": "activity",  "ic": "ti-map-pin",      "tx": "George Town street art walk — Penang's famous wall murals and iron rod sculptures scattered through the UNESCO heritage streets. Free. Pick up a map from hotel." },
+        { "t": "4:00 PM",  "tp": "activity",  "ic": "ti-anchor",       "tx": "Clan Jetties of Penang — Chinese clan villages built on stilts over the water. Chew Jetty is the largest. Free." },
+        { "t": "6:00 PM",  "tp": "activity",  "ic": "ti-building",     "tx": "George Town Heritage Zone evening stroll — colonial shophouses, Little India, Armenian Street. Free." },
+        { "t": "8:00 PM",  "tp": "food",      "tx": "Dinner — hawker stalls in George Town. Penang char kway teow, asam laksa, rojak. MYR 20–40/person." }
+      ]
+    },
+    {
+      "n": 6, "date": "Sun 28 Dec", "lbl": "Penang Highlights",
+      "acts": [
+        { "t": "8:00 AM",  "tp": "food",      "ic": "ti-coffee",      "tx": "Breakfast at a kopitiam — traditional Penang white coffee, kaya toast, soft-boiled eggs. MYR 10–15/person." },
+        { "t": "9:00 AM",  "tp": "activity",  "ic": "ti-mountain",    "tx": "Penang Hill — funicular railway to 830 m summit. MYR 30/person return. Colonial bungalows, Owl Museum, panoramic views of George Town and the strait." },
+        { "t": "11:30 AM", "tp": "activity",  "ic": "ti-building",    "tx": "Kek Lok Si Temple — largest Buddhist temple in Malaysia. 7-storey pagoda, bronze Kuan Yin statue. Free (lift to statue: MYR 2). ~1.5 hrs." },
+        { "t": "1:30 PM",  "tp": "food",      "tx": "Lunch at Gurney Drive Hawker Centre — open-air hawker stalls on the waterfront. Hokkien mee, cendol, grilled corn. MYR 15–30/person." },
+        { "t": "3:30 PM",  "tp": "activity",  "ic": "ti-building",    "tx": "Cheong Fatt Tze — The Blue Mansion. MYR 17/person guided tour. Stunning indigo-blue 1880s Chinese Baroque mansion. Only 3 tours/day — book ahead." },
+        { "t": "5:30 PM",  "tp": "activity",  "ic": "ti-map-pin",     "tx": "Final George Town wander — sunset over the colonial waterfront, Armenian Street cafés." },
+        { "t": "8:00 PM",  "tp": "food",      "tx": "Last dinner in Penang — assam laksa or nasi kandar. MYR 20–40/person." }
+      ]
+    },
+    {
+      "n": 7, "date": "Mon 29 Dec", "lbl": "Penang → Langkawi",
+      "acts": [
+        { "t": "Morning",  "tp": "food",      "ic": "ti-coffee",      "tx": "Breakfast + check out of Rare Heritage House." },
+        { "t": "Morning",  "tp": "transport", "tx": "Grab to Penang International Airport (PEN)." },
+        { "t": "Morning",  "tp": "flight",    "tx": "Flight FY4672, Firefly: PEN → Langkawi LGK. ~30 min. MYR 386/person." },
+        { "t": "~11:00 AM","tp": "transport", "ic": "ti-car",          "tx": "Car rental pickup at Langkawi Airport — LangkawiBook.my. MYR 240 total. Essential for exploring the island." },
+        { "t": "~11:30 AM","tp": "sleep",     "tx": "Check in: Destini Akef Villa, Langkawi." },
+        { "t": "1:00 PM",  "tp": "activity",  "ic": "ti-mountain",    "tx": "Langkawi Skybridge Cable Car — gondola to 700 m peak, walk the curved pedestrian bridge over the jungle canopy. MYR 55/person return." },
+        { "t": "3:30 PM",  "tp": "activity",  "ic": "ti-beach",       "tx": "Pantai Cenang — Langkawi's most popular beach. White sand, calm water, beach bars. Free." },
+        { "t": "5:30 PM",  "tp": "activity",  "ic": "ti-trees",       "tx": "Dream Forest Langkawi — magical illuminated forest art installation after dark. MYR 38/person." },
+        { "t": "8:00 PM",  "tp": "food",      "tx": "Dinner at Pantai Cenang strip — fresh grilled fish, Tom yum, mango sticky rice. MYR 30–60/person." }
+      ]
+    },
+    {
+      "n": 8, "date": "Tue 30 Dec", "lbl": "Langkawi — Sea & Islands",
+      "acts": [
+        { "t": "8:00 AM",  "tp": "food",      "ic": "ti-coffee",   "tx": "Breakfast at villa or nearby café." },
+        { "t": "9:00 AM",  "tp": "activity",  "ic": "ti-anchor",   "tx": "Mangrove Tour — boat through Kilim Geoforest Park mangroves. Bat caves, fish farm, eagle feeding. ~3 hrs. MYR 80–120/person. Book via hotel." },
+        { "t": "1:00 PM",  "tp": "food",      "tx": "Lunch at a fish farm on the water — the tour often includes a seafood stop. MYR 20–40." },
+        { "t": "2:30 PM",  "tp": "activity",  "ic": "ti-anchor",   "tx": "Island Hopping — Alanona speedboat tour to Pulau Dayang Bunting (Pregnant Maiden Lake), Pulau Singa Besar, and Pulau Beras Basah. MYR 35–50/person. ~3 hrs." },
+        { "t": "6:00 PM",  "tp": "activity",  "ic": "ti-map-pin",  "tx": "Eagle Square (Dataran Lang) — 12-metre bronze eagle sculpture, Langkawi's icon. Free. Sunset views over the strait." },
+        { "t": "8:00 PM",  "tp": "food",      "tx": "Dinner — seafood barbecue by the beach. MYR 40–80/person." }
+      ]
+    },
+    {
+      "n": 9, "date": "Wed 31 Dec", "lbl": "Langkawi — New Year's Eve",
+      "acts": [
+        { "t": "10:00 AM", "tp": "activity",  "ic": "ti-shopping-bag","tx": "Cenang Mall, Langkawi — duty-free shopping: chocolates, alcohol, cosmetics. No GST on Langkawi." },
+        { "t": "12:00 PM", "tp": "food",      "tx": "Lunch at beachfront café. MYR 30–50/person." },
+        { "t": "2:00 PM",  "tp": "activity",  "ic": "ti-ripple",      "tx": "Alun-Alun Spa, Pantai Cenang — traditional Malay massage and treatments. MYR 80–150/person. Book ahead." },
+        { "t": "5:00 PM",  "tp": "activity",  "ic": "ti-beach",       "tx": "Sunset at Pantai Cenang — one of the best sunsets in Malaysia. Free." },
+        { "t": "7:30 PM",  "tp": "food",      "tx": "New Year's Eve dinner at Yellow Beach Cafe — waterfront setting, fresh seafood, festive atmosphere. MYR 60–120/person." },
+        { "t": "10:00 PM", "tp": "night",     "tx": "New Year's Eve countdown on the beach. Fireworks over the Andaman Sea. Return car tonight and arrange morning transfer." }
+      ]
+    },
+    {
+      "n": 10, "date": "Thu 1 Jan", "lbl": "Departure",
+      "acts": [
+        { "t": "Early AM", "tp": "transport", "tx": "Check out of Destini Akef Villa. Transfer to Langkawi Airport (LGK) for connecting flight to KUL." },
+        { "t": "Morning",  "tp": "flight",    "tx": "Flight: Langkawi LGK → Kuala Lumpur KUL (AirAsia or Firefly, ~1 hr). Book separately to connect to return flight." },
+        { "t": "~11:00 AM","tp": "activity",  "ic": "ti-check",    "tx": "Arrive KUL. Check-in + security. Batik Air OD166, Terminal 2." },
+        { "t": "Afternoon","tp": "flight",    "tx": "Flight OD166, Batik Air Malaysia: KUL → Dhaka DAC. MYR 2,077/person." },
+        { "t": "Evening",  "tp": "flight",    "tx": "Land Dhaka DAC — Hazrat Shahjalal International Airport." }
+      ]
+    }
+  ],
+  "budget": [
+    { "cat": "Flights — all 3 (for 2)",           "amount": "~4,518", "note": "DAC→KUL BS315 MYR 2,055 · PEN→LGK FY4672 MYR 386 · KUL→DAC OD166 MYR 2,077", "isTotal": false },
+    { "cat": "Accommodation — 9 nights (for 2)",   "amount": "~1,233", "note": "Kingston Hotel 6 MYR 307 (3 nts) · Melur Inn MYR 197 (1 nt) · Rare Heritage House MYR 313 (2 nts) · Destini Akef Villa MYR 416 (3 nts)", "isTotal": false },
+    { "cat": "Transport — buses & car rental",      "amount": "~557",   "note": "KL↔Genting 45.2 · TBS↔Melaka 69.6 · TBS→Cameron 111.88 · Tanah Rata→Penang 90.4 · Car rental Langkawi 240", "isTotal": false },
+    { "cat": "Food & activities (estimated, for 2)","amount": "~2,952", "note": "Damascus 130 · KLCC Park 30 · hawker meals + entry fees + tours + Langkawi activities over 10 days", "isTotal": false },
+    { "cat": "Total",                              "amount": "~9,260", "note": "≈ 250,000 BDT. Includes all flights.", "isTotal": true }
+  ],
+  "notes": [
+    { "title": "Currency",   "text": "1 USD ≈ MYR 4.45 · 1 BDT ≈ MYR 0.037 (approx, Dec 2025). Langkawi is duty-free — alcohol, chocolates, and cosmetics are significantly cheaper." },
+    { "title": "Transport",  "text": "Use Grab for city rides in KL and Penang. Car rental is essential in Langkawi — public transport is limited. Book buses from TBS (Terminal Bersepadu Selatan) via Easybook or at the counter." },
+    { "title": "Airports",   "text": "Jan 1 departure is from Kuala Lumpur KUL (not Langkawi). Book a Langkawi→KUL connecting flight separately and allow at least 3 hrs before the KUL→DAC departure." },
+    { "title": "Dress Code", "text": "Cover shoulders and knees at Sam Poh Temple, Kek Lok Si, and Batu Caves. Modest dress appreciated at all religious sites." },
+    { "title": "Cash",       "text": "Carry MYR cash for hawker centres, temples, and rural stops. ATMs widely available in KL, Penang, and Langkawi town. Grab requires a card linked to the app." }
+  ]
+}

@@ -250,7 +250,7 @@ function renderRoute(route, hotels) {
 function renderFlights(flights) {
   const el = document.getElementById('flights-grid');
   if (!el || !flights) return;
-  const rows = [flights.outbound, flights.return].filter(Boolean);
+  const rows = [flights.outbound, ...(flights.internal || []), flights.return].filter(Boolean);
   el.innerHTML = rows.map(f => `
 <div class="flight-row">
   <div class="flight-label">${f.label || ''}</div>
