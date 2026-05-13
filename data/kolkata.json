@@ -1,0 +1,121 @@
+{
+  "meta": {
+    "id": "kolkata",
+    "accentColor": "#f97316",
+    "heroIcon": "ti-building-monument",
+    "title": "Kolkata",
+    "destination": "Kolkata, West Bengal",
+    "subtitle": "The City of Joy",
+    "tagline": "4 days · couple · leisure",
+    "tripType": "Leisure",
+    "durationDays": 4,
+    "startDate": "2023-04-17",
+    "endDate": "2023-04-20",
+    "dateLabel": "17–20 Apr 2023",
+    "travelers": 2,
+    "travelerLabel": "couple",
+    "highlights": ["Victoria Memorial", "Dakshineshwar Temple", "Park Street"],
+    "budgetSummary": { "currency": "INR", "total": "~40,000", "usdEquiv": "~$488", "note": "Includes flights, for 2" }
+  },
+  "flights": {
+    "outbound": {
+      "label": "Outbound",
+      "route": "DAC → CCU",
+      "detail": "Mon 17 Apr · US-Bangla Airlines"
+    },
+    "return": {
+      "label": "Return",
+      "route": "CCU → DAC",
+      "detail": "Thu 20 Apr · US-Bangla Airlines · ~5:00 PM depart"
+    }
+  },
+  "hotels": [
+    { "name": "FabHotel Mayfair Tower", "location": "Kolkata", "nights": 3, "dateRange": "17–20 Apr", "totalINR": 6000, "perNightINR": 2000 }
+  ],
+  "route": [
+    { "city": "DAC",     "via": null },
+    { "city": "Kolkata", "via": "flight" },
+    { "city": "DAC",     "via": null }
+  ],
+  "exchangeRates": {
+    "USD_INR": 82,
+    "BDT_INR": 0.73,
+    "note": "1 USD ≈ INR 82 · 1 BDT ≈ INR 0.73 (approx, Apr 2023)"
+  },
+  "days": [
+    {
+      "n": 1, "date": "Mon 17 Apr", "lbl": "Arrive → North Kolkata & Park Street",
+      "acts": [
+        { "t": "Morning",  "tp": "flight",    "tx": "Depart Dhaka DAC — US-Bangla Airlines to Kolkata CCU. ~1 hr flight." },
+        { "t": "~10:00 AM","tp": "flight",    "tx": "Arrive Netaji Subhas Chandra Bose International Airport (CCU). Clear immigration + bags." },
+        { "t": "10:30 AM", "tp": "transport", "tx": "Uber/Ola: CCU → FabHotel Mayfair Tower. ~45 min, INR 600–800." },
+        { "t": "11:30 AM", "tp": "sleep",     "tx": "Check in: FabHotel Mayfair Tower, Kolkata." },
+        { "t": "12:30 PM", "tp": "food",      "ic": "ti-coffee",      "tx": "Lunch near hotel — Bengali thali or kati roll from a local restaurant. INR 150–250/person." },
+        { "t": "2:00 PM",  "tp": "activity",  "ic": "ti-building",    "tx": "Jorasanko Thakurbari — the ancestral home of Rabindranath Tagore, now a museum. INR 10/person. Beautiful terracotta architecture; manuscript and painting collections. ~1 hr. Take metro to Girish Park." },
+        { "t": "3:15 PM",  "tp": "activity",  "ic": "ti-building",    "tx": "Marble Palace (optional) — 19th-century mansion with marble floors, European art, and a private zoo. Free but advance permission required through WBTDC. A 5-min walk from Jorasanko." },
+        { "t": "4:30 PM",  "tp": "transport", "tx": "Uber to New Town/Rajarhat. ~30 min, INR 200–300." },
+        { "t": "5:00 PM",  "tp": "activity",  "ic": "ti-camera",      "tx": "Biswa Bangla Gate — the iconic golden V-shaped gateway, symbol of a resurgent West Bengal. Free. Illuminated after dark. Great photo spot on the New Town action area road." },
+        { "t": "5:30 PM",  "tp": "activity",  "ic": "ti-trees",       "tx": "Eco Park, Rajarhat — 480-acre urban park with themed gardens, a lake, boating, cycling, and replicas of the Seven Wonders. INR 30/person entry. Boat ride INR 50/person extra." },
+        { "t": "8:30 PM",  "tp": "transport", "tx": "Uber to Park Street. ~30 min, INR 200–300." },
+        { "t": "9:00 PM",  "tp": "night",     "tx": "The Lords and Barons, Park Street — one of Kolkata's most celebrated pubs. Live music, craft beer, classic cocktails. Park Street is the soul of KOL nightlife." }
+      ]
+    },
+    {
+      "n": 2, "date": "Tue 18 Apr", "lbl": "Monuments & Riverside",
+      "acts": [
+        { "t": "9:00 AM",  "tp": "food",      "ic": "ti-coffee",      "tx": "Breakfast at a Park Street bakery or hotel — pav bhaji or toast + chai. INR 100–150/person." },
+        { "t": "11:00 AM", "tp": "activity",  "ic": "ti-building",    "tx": "Indian Museum, Park Street — oldest and largest museum in India (est. 1814). Fossils, Egyptian mummies, Mughal miniatures, and the famous Bharhut Gallery. INR 20/person. ~1.5 hrs." },
+        { "t": "12:30 PM", "tp": "activity",  "ic": "ti-building",    "tx": "Victoria Memorial — stunning white marble monument built for Queen Victoria. Museum inside with colonial-era paintings and artefacts. INR 200/person (foreign visitor). Gardens free. ~1 hr." },
+        { "t": "2:00 PM",  "tp": "food",      "ic": "ti-shopping-bag","tx": "Esplanade — lunch at a local dhaba or Peter Cat (famous for chelo kebab, INR 400–600/person). Browse the busy pavement stalls and New Market entrance street." },
+        { "t": "3:30 PM",  "tp": "activity",  "ic": "ti-building",    "tx": "St Paul's Cathedral — 1847 Gothic Revival cathedral, the oldest of its kind in the subcontinent. Free. Stained-glass windows, Florentine frescoes, peaceful interior." },
+        { "t": "4:30 PM",  "tp": "activity",  "ic": "ti-ripple",      "tx": "Princep Ghat — scenic riverside promenade on the Hooghly with Victorian arches and boat views. Free. One of Kolkata's most romantic sunset spots. ~1 hr." },
+        { "t": "6:30 PM",  "tp": "activity",  "ic": "ti-building",    "tx": "Birla Mandir (Lakshmi Narayan Temple), Ballygunge — ornate white marble temple built in 1970. Free. Open until 9 PM. Serene atmosphere after a busy day." },
+        { "t": "8:00 PM",  "tp": "food",      "tx": "Dinner at Ballygunge — Mitra Café (iconic since 1963: kosha mangsho, mustard fish), or Oh! Calcutta for refined Bengali cuisine. INR 500–800/person." }
+      ]
+    },
+    {
+      "n": 3, "date": "Wed 19 Apr", "lbl": "Colonial Heart & Sacred Temples",
+      "acts": [
+        { "t": "9:00 AM",  "tp": "food",      "ic": "ti-coffee",      "tx": "Breakfast — mishti doi and luchi from a neighbourhood sweet shop. INR 80–120/person." },
+        { "t": "11:00 AM", "tp": "activity",  "ic": "ti-building",    "tx": "BBD Bagh (Dalhousie Square) — Kolkata's colonial core. Writer's Building (1777), GPO, St John's Church, Raj Bhavan. Free walking exploration. ~1 hr. The most concentrated cluster of British-era architecture in India." },
+        { "t": "12:30 PM", "tp": "activity",  "ic": "ti-shopping-bag","tx": "New Market (Sir Stuart Hogg Market, 1874) — sprawling indoor-outdoor market: textiles, leather, spices, sweets, street food. Free entry. Great for gifts and local snacks." },
+        { "t": "2:00 PM",  "tp": "food",      "tx": "Lunch near New Market — roll from Nizam's or Shiraz Hotel (legendary biryani). INR 200–400/person." },
+        { "t": "3:00 PM",  "tp": "sleep",     "tx": "Return to FabHotel Mayfair Tower. Rest and freshen up before the temple run." },
+        { "t": "4:00 PM",  "tp": "transport", "tx": "Uber/Ola to Dakshineshwar. ~30–40 min, INR 250–350." },
+        { "t": "4:30 PM",  "tp": "activity",  "ic": "ti-building",    "tx": "Dakshineshwar Kali Temple — famous riverside temple where Sri Ramakrishna served as priest. Free. The nahabatkhana, 12 Shiva temples, and the main Kali shrine. Deeply spiritual atmosphere on the Hooghly. Remove footwear." },
+        { "t": "6:00 PM",  "tp": "transport", "ic": "ti-anchor",      "tx": "Ferry launch: Dakshineshwar → Belur Math. INR 5–10/person. ~15 min across the Hooghly — a memorable river crossing at dusk." },
+        { "t": "6:15 PM",  "tp": "activity",  "ic": "ti-building",    "tx": "Belur Math — the headquarters of the Ramakrishna Mission, blending Hindu, Christian, and Islamic architectural motifs. Free. Grounds open till 7:30 PM. Serene riverside setting." },
+        { "t": "8:00 PM",  "tp": "food",      "tx": "Dinner back near hotel — Bengali fish curry or chowmein from a Kolkata-Chinese eatery on the way. INR 200–350/person." },
+        { "t": "10:00 PM", "tp": "night",     "ic": "ti-movie",       "tx": "INOX multiplex — latest Hindi or English film. INR 250–350/person. Book tickets online beforehand to secure seats." }
+      ]
+    },
+    {
+      "n": 4, "date": "Thu 20 Apr", "lbl": "Departure",
+      "acts": [
+        { "t": "9:00 AM",  "tp": "food",      "ic": "ti-coffee",      "tx": "Last breakfast in Kolkata — rosogolla and toast at a sweet shop. INR 80–120/person." },
+        { "t": "10:00 AM", "tp": "activity",  "ic": "ti-shopping-bag","tx": "Final stroll and last-minute shopping on Park Street or New Market. Pick up mishti doi, sandesh, and mustard oil to bring back." },
+        { "t": "12:00 PM", "tp": "food",      "tx": "Final lunch — Arsalan or Shiraz Hotel biryani. INR 250–400/person." },
+        { "t": "2:00 PM",  "tp": "transport", "tx": "Check out of FabHotel Mayfair Tower. Uber to CCU airport. ~45 min, INR 600–800." },
+        { "t": "3:00 PM",  "tp": "activity",  "ic": "ti-check",       "tx": "Arrive CCU (Netaji Subhas Chandra Bose International Airport). Check-in + immigration + security. US-Bangla Airlines return flight." },
+        { "t": "~5:00 PM", "tp": "flight",    "tx": "Flight departs CCU — US-Bangla Airlines to Dhaka DAC. ~1 hr." },
+        { "t": "~6:00 PM", "tp": "flight",    "tx": "Land Dhaka DAC — Hazrat Shahjalal International Airport, Terminal 1." }
+      ]
+    }
+  ],
+  "budget": [
+    { "cat": "Flights — round trip (for 2)",      "amount": "~22,000", "note": "DAC↔CCU US-Bangla Airlines return, for 2 passengers", "isTotal": false },
+    { "cat": "Accommodation — 3 nights (for 2)",  "amount": "~6,000",  "note": "FabHotel Mayfair Tower ~INR 2,000/night × 3", "isTotal": false },
+    { "cat": "Transport within Kolkata (for 2)",  "amount": "~2,500",  "note": "Airport transfers × 2 (1,400) · Uber/Ola city rides · metro · ferry launch", "isTotal": false },
+    { "cat": "Entry fees & INOX (for 2)",         "amount": "~2,000",  "note": "Victoria Memorial 400 · Indian Museum 40 · Eco Park 60 · Jorasanko 20 · INOX 700 · misc temples free", "isTotal": false },
+    { "cat": "Food — 4 days (for 2)",             "amount": "~5,000",  "note": "Street food + local restaurants ~INR 600/day for two. Biryani, kati rolls, mishti, Bengali thali.", "isTotal": false },
+    { "cat": "Shopping & miscellaneous",          "amount": "~2,500",  "note": "New Market, sweets & snacks to bring home, misc", "isTotal": false },
+    { "cat": "Total estimate",                    "amount": "~40,000", "note": "Includes flights. Equivalent to ~BDT 54,800.", "isTotal": true }
+  ],
+  "notes": [
+    { "title": "Currency",    "text": "1 USD ≈ INR 82 · 1 BDT ≈ INR 0.73 (approx, Apr 2023). Carry INR cash — most street vendors, autos, and small eateries don't accept cards." },
+    { "title": "Transport",   "text": "Use Uber or Ola for comfortable point-to-point travel (INR 200–800 per trip). Kolkata Metro is cheap (INR 5–25) and fast for central corridors. Yellow Ambassador taxis are iconic but negotiate the fare upfront." },
+    { "title": "Marble Palace","text": "Prior written permission needed from the Mullick family via WBTDC (West Bengal Tourism). Apply at least a day ahead. Visit is free once permitted." },
+    { "title": "Dress Code",  "text": "Remove footwear at all temples — Dakshineshwar, Belur Math, Birla Mandir, Jorasanko. Carry a small bag for shoes. Light, breathable clothing recommended for April heat (32–38°C)." },
+    { "title": "Food",        "text": "Must-try: kosha mangsho (dry mutton curry), shorshe ilish (hilsa in mustard sauce), chelo kebab at Peter Cat, Park Street. For sweets: rosogolla, sandesh, mishti doi from KC Das or Balaram Mullick." }
+  ]
+}
